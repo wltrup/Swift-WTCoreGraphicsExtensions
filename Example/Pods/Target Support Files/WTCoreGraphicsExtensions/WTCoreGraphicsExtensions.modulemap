@@ -1,0 +1,6 @@
+framework module WTCoreGraphicsExtensions {
+  umbrella header "WTCoreGraphicsExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}

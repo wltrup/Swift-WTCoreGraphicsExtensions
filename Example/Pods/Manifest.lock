@@ -1,0 +1,16 @@
+PODS:
+  - WTCoreGraphicsExtensions (0.1.0)
+
+DEPENDENCIES:
+  - WTCoreGraphicsExtensions (from `../`)
+
+EXTERNAL SOURCES:
+  WTCoreGraphicsExtensions:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WTCoreGraphicsExtensions: b833839344efd91bd23d7f24d1ad36398c4e3e63
+
+PODFILE CHECKSUM: d76ec7bcb5596f20f283485e8b69a82ee428459f
+
+COCOAPODS: 1.1.1

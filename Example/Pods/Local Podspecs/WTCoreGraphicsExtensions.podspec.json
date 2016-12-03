@@ -1,0 +1,22 @@
+{
+  "name": "WTCoreGraphicsExtensions",
+  "version": "0.1.0",
+  "summary": "A short description of WTCoreGraphicsExtensions.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/WTCoreGraphicsExtensions",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Wagner Truppel": "trupwl@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/WTCoreGraphicsExtensions.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "WTCoreGraphicsExtensions/Classes/**/*"
+}

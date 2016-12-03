@@ -1,0 +1,6 @@
+framework module Pods_WTCoreGraphicsExtensions_Tests {
+  umbrella header "Pods-WTCoreGraphicsExtensions_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

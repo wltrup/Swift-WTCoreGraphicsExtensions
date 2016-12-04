@@ -22,7 +22,6 @@ public struct CGPoint
     public init()
     public init(x: CGFloat, y: CGFloat)
 }
-
 extension CGPoint
 {
     public static var zero: CGPoint { get }
@@ -30,7 +29,6 @@ extension CGPoint
     public init(x: Double, y: Double)
     public init?(dictionaryRepresentation dict: CFDictionary)
 }
-
 extension CGPoint : Equatable {}
 
 public struct CGVector
@@ -40,14 +38,12 @@ public struct CGVector
     public init()
     public init(dx: CGFloat, dy: CGFloat)
 }
-
 extension CGVector
 {
     public static var zero: CGVector { get }
     public init(dx: Int, dy: Int)
     public init(dx: Double, dy: Double)
 }
-
 extension CGVector : Equatable {}
 ```
 
@@ -92,14 +88,13 @@ public extension CGPoint
     public static func +=(lhs: inout CGPoint, rhs: CGVector)
     public static func -=(lhs: inout CGPoint, rhs: CGVector)
 }
-
 extension CGPoint : Hashable
 {
     public var hashValue: Int { get }
 }
 
-public extension CGVector {
-
+public extension CGVector
+{
     public init(dx: Float, dy: Float)
     public init(from p1: CGPoint, to p2: CGPoint)
 
@@ -173,7 +168,6 @@ public extension CGVector {
     public static func *=(lhs: inout CGVector, rhs: CGFloat)
     public static func /=(lhs: inout CGVector, rhs: CGFloat) throws
 }
-
 extension CGVector : Hashable
 {
     public var hashValue: Int { get }
@@ -203,8 +197,8 @@ coverage. The missing 8% test-coverage is due to the fact that `CGGradient` is a
 
 **WTCoreGraphicsExtensions** depends on two other of my libraries:
 
-    - [**WTBinaryFloatingPointExtensions**](https://github.com/wltrup/Swift-WTBinaryFloatingPointExtensions)
-    - [**WTUIColorExtensions**](https://github.com/wltrup/iOS-Swift-WTUIColorExtensions)
+    - (**WTBinaryFloatingPointExtensions**)[https://github.com/wltrup/Swift-WTBinaryFloatingPointExtensions]
+    - (**WTUIColorExtensions**)[https://github.com/wltrup/iOS-Swift-WTUIColorExtensions]
 
 ## Installation
 

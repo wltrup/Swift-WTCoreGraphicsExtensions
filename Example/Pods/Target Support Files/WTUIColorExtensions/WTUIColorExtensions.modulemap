@@ -1,0 +1,6 @@
+framework module WTUIColorExtensions {
+  umbrella header "WTUIColorExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}

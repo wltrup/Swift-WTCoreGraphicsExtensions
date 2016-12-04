@@ -1,0 +1,6 @@
+framework module WTBinaryFloatingPointExtensions {
+  umbrella header "WTBinaryFloatingPointExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}

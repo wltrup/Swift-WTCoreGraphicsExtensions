@@ -7,29 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D5DD5005F92E85A0AFFB9447B40CB04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87ABE23F336B7CEC42ADE64F2AF17AC2 /* Foundation.framework */; };
+		18821D53C103BA0066BF59619998D2E9 /* WTBinaryFloatingPointExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B3B19FEC83D134081B25743D045852 /* WTBinaryFloatingPointExtensions.framework */; };
+		2D5DD5005F92E85A0AFFB9447B40CB04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D59C91D88DC585F5F863B91318729D /* Foundation.framework */; };
 		41746DD3C66F60C81922584F4159BAEC /* Pods-WTCoreGraphicsExtensions_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFDB67DB1D5EC9EFA7E8377FC6331961 /* Pods-WTCoreGraphicsExtensions_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A8188930EF9389B0ECA40FB3A69D312 /* WTUIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761A80A0E629CD0408C636E144AF478B /* WTUIColorExtensions.swift */; };
-		5E4D0A209935C1D7B06AFFDCD889CCC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87ABE23F336B7CEC42ADE64F2AF17AC2 /* Foundation.framework */; };
-		5F0938830014B16FE002FC2B399F91E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87ABE23F336B7CEC42ADE64F2AF17AC2 /* Foundation.framework */; };
+		5E4D0A209935C1D7B06AFFDCD889CCC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D59C91D88DC585F5F863B91318729D /* Foundation.framework */; };
+		5F0938830014B16FE002FC2B399F91E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D59C91D88DC585F5F863B91318729D /* Foundation.framework */; };
 		67DA9DE1F04AA37F6B3447BA536BB012 /* WTUIColorExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C97CDA50053E9FFC6FC27035080511 /* WTUIColorExtensions-dummy.m */; };
 		74F9FBBC52BF352A1A86E8F6C541EF6A /* WTBoolExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4495CB233CABEFEE8F59C1A62C3B5462 /* WTBoolExtensions-dummy.m */; };
 		7E23A7246A6FBFBA2A39EC4645D0A5E2 /* WTCoreGraphicsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E51F20E4062EDF7F7325693925ACC /* WTCoreGraphicsExtensions.swift */; };
-		8F1DE6EC87A11D387054C1A1F864CD07 /* WTBoolExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E530144EE4E03D33C757B36FBF767B1E /* WTBoolExtensions.framework */; };
-		977D3EC8795D25EFACC03B2E95AFD00E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87ABE23F336B7CEC42ADE64F2AF17AC2 /* Foundation.framework */; };
+		8420AB259FB9C8743F6AE7E6CAF0C005 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC7156EA514C43DFBB0718B50BB262F /* UIKit.framework */; };
 		97B23AEED6FE32FA2A0E690F0D9FBC70 /* WTBinaryFloatingPointExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222DD7F2598CA4C4E4F70DC79E9F93E /* WTBinaryFloatingPointExtensions.swift */; };
 		9A8850B761CD8BC8EACAE3999AC91C97 /* WTBinaryFloatingPointExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEECF74148886FDB6F14EB0736A46CA /* WTBinaryFloatingPointExtensions-dummy.m */; };
 		9DB0EEF78910BF339B28E2EBB60D7C78 /* WTBoolExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4742AA4BF130F43B15C1099393AC7F98 /* WTBoolExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DBEB93063691D61C58ED6833DCB7415 /* WTUIColorExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9222DBAAE1C848E65616863D10DD4D5A /* WTUIColorExtensions.framework */; };
+		A86327D8BFE5CDBBA9804E773229067F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D59C91D88DC585F5F863B91318729D /* Foundation.framework */; };
 		AC492D980B1FFA3FE606794885B19ED1 /* WTCoreGraphicsExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B3A74718E661BA6307183FF87DC7F /* WTCoreGraphicsExtensions-dummy.m */; };
-		ADA9E62B0CA3312893E044E8B61E32E0 /* WTUIColorExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F9EC417C7CFD5AE6E8A87CDDC13EBA /* WTUIColorExtensions.framework */; };
 		C1280F6AF0752F4D4518C7D585E2C0D9 /* WTBoolExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB35E9C4A5DE304992CD0C2048C298E /* WTBoolExtensions.swift */; };
 		CB68CC8DA0CF8BDA9D52B6AD5CAA5157 /* WTUIColorExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D4A4F179BB91491874F86714AC877D /* WTUIColorExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D14C12C8485DE835340D74426DA3AD8A /* Pods-WTCoreGraphicsExtensions_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 705B8ADDC24B5AF0FFF979BDCA476FE8 /* Pods-WTCoreGraphicsExtensions_Tests-dummy.m */; };
-		D1E59E926CD90B0067266D1AAE56AF58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87ABE23F336B7CEC42ADE64F2AF17AC2 /* Foundation.framework */; };
+		D1E59E926CD90B0067266D1AAE56AF58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D59C91D88DC585F5F863B91318729D /* Foundation.framework */; };
 		DD1374EA9230F1C1405F39901546FE56 /* WTBinaryFloatingPointExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E53B94E19532E33583B9131646C2478 /* WTBinaryFloatingPointExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E3886116D16730BB15A8F5A15DA35D77 /* WTCoreGraphicsExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 357C443E228A2CFBB588E65A8C938076 /* WTCoreGraphicsExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E89D326D07647E9A0B7D6966AE35D86E /* WTBinaryFloatingPointExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5503BD0CC66F0057CA23910089D5E5 /* WTBinaryFloatingPointExtensions.framework */; };
-		FBE965D3CE7A0F1CBCFE491032D90F27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C013CB74DC65EE26C5D86A6C9341E16 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,13 +59,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 05F091DAC41E244D0DB7C11BE4B9B94B;
 			remoteInfo = WTUIColorExtensions;
-		};
-		637136E70A787270965E1B88A5D9D49F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C78D940E94EDA61AB00E3975EEE89B5C;
-			remoteInfo = WTBoolExtensions;
 		};
 		8711BFE5624EF546FA07B7442240EF04 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -103,19 +95,18 @@
 		46592B418F247588E6BD3C57223B3825 /* Pods-WTCoreGraphicsExtensions_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WTCoreGraphicsExtensions_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4742AA4BF130F43B15C1099393AC7F98 /* WTBoolExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTBoolExtensions-umbrella.h"; sourceTree = "<group>"; };
 		47E9A55BC2FA003C901A91556D2F15DE /* WTUIColorExtensions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTUIColorExtensions-prefix.pch"; sourceTree = "<group>"; };
-		4C5503BD0CC66F0057CA23910089D5E5 /* WTBinaryFloatingPointExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WTBinaryFloatingPointExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E53B94E19532E33583B9131646C2478 /* WTBinaryFloatingPointExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTBinaryFloatingPointExtensions-umbrella.h"; sourceTree = "<group>"; };
+		52B3B19FEC83D134081B25743D045852 /* WTBinaryFloatingPointExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WTBinaryFloatingPointExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55D4A4F179BB91491874F86714AC877D /* WTUIColorExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTUIColorExtensions-umbrella.h"; sourceTree = "<group>"; };
 		579F990AB5E532528BAECEEF3CBECB01 /* WTUIColorExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WTUIColorExtensions.framework; path = WTUIColorExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C013CB74DC65EE26C5D86A6C9341E16 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		6092824388A019814133348FA71781BD /* WTCoreGraphicsExtensions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTCoreGraphicsExtensions-prefix.pch"; sourceTree = "<group>"; };
 		622476D29119786CBD9B13062C6F0E66 /* Pods-WTCoreGraphicsExtensions_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WTCoreGraphicsExtensions_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6CBD158FBD0B70B644E7EECA4A1BCA36 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		705B8ADDC24B5AF0FFF979BDCA476FE8 /* Pods-WTCoreGraphicsExtensions_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WTCoreGraphicsExtensions_Tests-dummy.m"; sourceTree = "<group>"; };
 		761A80A0E629CD0408C636E144AF478B /* WTUIColorExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WTUIColorExtensions.swift; path = WTUIColorExtensions/Classes/WTUIColorExtensions.swift; sourceTree = "<group>"; };
 		8548589CD7F70131901CEDAC3099F3FE /* WTBinaryFloatingPointExtensions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WTBinaryFloatingPointExtensions.xcconfig; sourceTree = "<group>"; };
-		87ABE23F336B7CEC42ADE64F2AF17AC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		8881C83F8417A3259FCA48CC329ECD52 /* WTUIColorExtensions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WTUIColorExtensions.xcconfig; sourceTree = "<group>"; };
+		9222DBAAE1C848E65616863D10DD4D5A /* WTUIColorExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WTUIColorExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93F7376C1120781679169302E879276B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		965D238F6BBD2777F7125825653FED07 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -124,14 +115,14 @@
 		AFA2902C24C240FCBD7278722DB88551 /* Pods-WTCoreGraphicsExtensions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WTCoreGraphicsExtensions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BBEECF74148886FDB6F14EB0736A46CA /* WTBinaryFloatingPointExtensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WTBinaryFloatingPointExtensions-dummy.m"; sourceTree = "<group>"; };
 		BC2BAE2E467F75D73896A42BCC296900 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7D59C91D88DC585F5F863B91318729D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CFC7156EA514C43DFBB0718B50BB262F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		CFDB67DB1D5EC9EFA7E8377FC6331961 /* Pods-WTCoreGraphicsExtensions_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WTCoreGraphicsExtensions_Tests-umbrella.h"; sourceTree = "<group>"; };
 		D007EAD9706840CE2DBDCFC79C0F1F66 /* Pods-WTCoreGraphicsExtensions_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WTCoreGraphicsExtensions_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D320B39FC4CD1D5783A40C321DB54F41 /* Pods-WTCoreGraphicsExtensions_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WTCoreGraphicsExtensions_Tests-resources.sh"; sourceTree = "<group>"; };
-		D5F9EC417C7CFD5AE6E8A87CDDC13EBA /* WTUIColorExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WTUIColorExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA574A3E16032A73E5B5578F6D62E87B /* WTCoreGraphicsExtensions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WTCoreGraphicsExtensions.xcconfig; sourceTree = "<group>"; };
 		DF478768D4178F4649603D00B66BA978 /* Pods-WTCoreGraphicsExtensions_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WTCoreGraphicsExtensions_Tests.modulemap"; sourceTree = "<group>"; };
 		E222DD7F2598CA4C4E4F70DC79E9F93E /* WTBinaryFloatingPointExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WTBinaryFloatingPointExtensions.swift; path = WTBinaryFloatingPointExtensions/Classes/WTBinaryFloatingPointExtensions.swift; sourceTree = "<group>"; };
-		E530144EE4E03D33C757B36FBF767B1E /* WTBoolExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WTBoolExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F14C137937429FA606433027A72106BD /* WTCoreGraphicsExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WTCoreGraphicsExtensions.framework; path = WTCoreGraphicsExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66B3A74718E661BA6307183FF87DC7F /* WTCoreGraphicsExtensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WTCoreGraphicsExtensions-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +133,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1E59E926CD90B0067266D1AAE56AF58 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CB819F6282A125E735A8A071067A70A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A86327D8BFE5CDBBA9804E773229067F /* Foundation.framework in Frameworks */,
+				8420AB259FB9C8743F6AE7E6CAF0C005 /* UIKit.framework in Frameworks */,
+				18821D53C103BA0066BF59619998D2E9 /* WTBinaryFloatingPointExtensions.framework in Frameworks */,
+				9DBEB93063691D61C58ED6833DCB7415 /* WTUIColorExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,18 +168,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D5DD5005F92E85A0AFFB9447B40CB04 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F9BF960E902962296B30191FA7A00EDA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				977D3EC8795D25EFACC03B2E95AFD00E /* Foundation.framework in Frameworks */,
-				FBE965D3CE7A0F1CBCFE491032D90F27 /* UIKit.framework in Frameworks */,
-				E89D326D07647E9A0B7D6966AE35D86E /* WTBinaryFloatingPointExtensions.framework in Frameworks */,
-				8F1DE6EC87A11D387054C1A1F864CD07 /* WTBoolExtensions.framework in Frameworks */,
-				ADA9E62B0CA3312893E044E8B61E32E0 /* WTUIColorExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,15 +229,13 @@
 			path = "Example/Pods/Target Support Files/WTCoreGraphicsExtensions";
 			sourceTree = "<group>";
 		};
-		607D678F424EB39A29F4F7C3E21DEDD2 /* Frameworks */ = {
+		4303F73D53F14D5910F3EB5EB68EEFC2 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				4C5503BD0CC66F0057CA23910089D5E5 /* WTBinaryFloatingPointExtensions.framework */,
-				E530144EE4E03D33C757B36FBF767B1E /* WTBoolExtensions.framework */,
-				D5F9EC417C7CFD5AE6E8A87CDDC13EBA /* WTUIColorExtensions.framework */,
-				998BB1581959903D8C9B62B9F926F481 /* iOS */,
+				C7D59C91D88DC585F5F863B91318729D /* Foundation.framework */,
+				CFC7156EA514C43DFBB0718B50BB262F /* UIKit.framework */,
 			);
-			name = Frameworks;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		7650E97377779A58D1E0FFC8E020A8B4 /* Development Pods */ = {
@@ -277,7 +265,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				7650E97377779A58D1E0FFC8E020A8B4 /* Development Pods */,
-				607D678F424EB39A29F4F7C3E21DEDD2 /* Frameworks */,
+				FCCFB14B4F5728E59CC10461076393CC /* Frameworks */,
 				0B1DD6441BDC506F435679490D954487 /* Pods */,
 				05FE3D109C386AA5CC1C9E7E3A761D09 /* Products */,
 				D84692F774FC3E2AD0FA6C648A8B84B3 /* Targets Support Files */,
@@ -291,15 +279,6 @@
 			);
 			name = WTCoreGraphicsExtensions;
 			path = WTCoreGraphicsExtensions;
-			sourceTree = "<group>";
-		};
-		998BB1581959903D8C9B62B9F926F481 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				87ABE23F336B7CEC42ADE64F2AF17AC2 /* Foundation.framework */,
-				5C013CB74DC65EE26C5D86A6C9341E16 /* UIKit.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		9EAF9C28AD5CE66181B227409A2DB966 /* WTUIColorExtensions */ = {
@@ -366,6 +345,16 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/WTBinaryFloatingPointExtensions";
+			sourceTree = "<group>";
+		};
+		FCCFB14B4F5728E59CC10461076393CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52B3B19FEC83D134081B25743D045852 /* WTBinaryFloatingPointExtensions.framework */,
+				9222DBAAE1C848E65616863D10DD4D5A /* WTUIColorExtensions.framework */,
+				4303F73D53F14D5910F3EB5EB68EEFC2 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		FD65FCEF837D413BB96B45296E002C24 /* Pods-WTCoreGraphicsExtensions_Tests */ = {
@@ -471,14 +460,13 @@
 			buildConfigurationList = B585D727CAF0CA9F9883B1FC7149E240 /* Build configuration list for PBXNativeTarget "WTCoreGraphicsExtensions" */;
 			buildPhases = (
 				B89F353C4E8BA0AFB6C59DDDAA6EDD86 /* Sources */,
-				F9BF960E902962296B30191FA7A00EDA /* Frameworks */,
+				4CB819F6282A125E735A8A071067A70A /* Frameworks */,
 				BDD20BB2555D7F2FF59DF4D37B927252 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				EA94C2DA445A047215EF1769E9B22780 /* PBXTargetDependency */,
-				8D1333F0491DBCB9577680108F75BDA5 /* PBXTargetDependency */,
 				05B76E9A2ACCC3568E3899111143010A /* PBXTargetDependency */,
 			);
 			name = WTCoreGraphicsExtensions;
@@ -613,12 +601,6 @@
 			name = WTUIColorExtensions;
 			target = 05F091DAC41E244D0DB7C11BE4B9B94B /* WTUIColorExtensions */;
 			targetProxy = 62C3D81DA39B6D09CEAD4D99B5983931 /* PBXContainerItemProxy */;
-		};
-		8D1333F0491DBCB9577680108F75BDA5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WTBoolExtensions;
-			target = C78D940E94EDA61AB00E3975EEE89B5C /* WTBoolExtensions */;
-			targetProxy = 637136E70A787270965E1B88A5D9D49F /* PBXContainerItemProxy */;
 		};
 		B712C02DB77198CC245955F274DE4D8C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

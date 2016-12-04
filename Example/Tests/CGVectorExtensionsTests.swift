@@ -143,25 +143,6 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
         }
     }
 
-    func test_initFromMagnitudeAndRandomAngleThrowsOnNegativeMagnitude()
-    {
-        (1...N).forEach { _ in
-            let m = -CGFloat.randomNonZero(0, abs(rangeMax))
-            let mina = CGFloat.random(0, 360).degreesInRadians
-            let maxa = CGFloat.random(0, 360).degreesInRadians
-
-            do {
-                let _ = try CGVector(magnitude: m, minAngle: mina, maxAngle: maxa)
-                XCTFail()
-            }
-            catch {
-                expectedError = WTCoreGraphicsExtensionsError.negativeMagnitude
-                resultedError = error
-                assertEqualErrors()
-            }
-        }
-    }
-
     func test_randomGeneratesValuesInTheExpectedRange()
     {
         let min = (rangeMin <= rangeMax ? rangeMin : rangeMax)
@@ -469,6 +450,19 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
 
             expectedValue = (dx*dx + dy*dy)
             resultedValue = v.magnitudeSquared
+            assertAbsoluteDifferenceWithinTolerance()
+        }
+    }
+
+    func test_manhattanMagnitude()
+    {
+        (1...N).forEach { _ in
+            let dx = CGFloat.random(rangeMin, rangeMax)
+            let dy = CGFloat.random(rangeMin, rangeMax)
+            let v = CGVector(dx: dx, dy: dy)
+
+            expectedValue = abs(dx) + abs(dy)
+            resultedValue = v.manhattanMagnitude
             assertAbsoluteDifferenceWithinTolerance()
         }
     }

@@ -378,27 +378,6 @@ public extension CGVector
         dy = m * sina
     }
 
-    /// Initializes `self` with a given magnitude and an angle (in radians)
-    /// that is a uniform pseudo-random number in the **closed** interval
-    /// [min(a,b), max(a,b)].
-    ///
-    /// - Parameters:
-    ///   - m: the desired magnitude, which must be a non-negative number.
-    ///   - minAngle: the desired minimum angle (in radians) to generate
-    ///               pseudo-random values from. The default value is `0` radians.
-    ///   - maxAngle: the desired maximum angle (in radians) to generate
-    ///               pseudo-random values from. The default value is `2π` radians.
-    ///
-    /// - Throws: `WTCoreGraphicsExtensionsError.negativeMagnitude` if `m` is negative.
-    public init(magnitude m: CGFloat,
-                minAngle: CGFloat = 0,
-                maxAngle: CGFloat = CGFloat.twoPi) throws
-    {
-        guard m >= 0 else { throw WTCoreGraphicsExtensionsError.negativeMagnitude }
-        let angle = CGFloat.random(minAngle, maxAngle)
-        try! self.init(magnitude: m, angle: angle)
-    }
-
     // MARK: -
 
     /// Returns an instance where each component is a uniform pseudo-random number
@@ -794,10 +773,8 @@ public extension CGVector
         let thisAngle =  self.angleFromXAxis
         let thatAngle = other.angleFromXAxis
         let delta: CGFloat = abs(thisAngle - thatAngle)
-        if delta > CGFloat(180).degreesInRadians
-        { return CGFloat.twoPi - delta }
-        else
-        { return delta }
+        if delta > CGFloat(180).degreesInRadians { return CGFloat.twoPi - delta }
+        return delta
     }
 
     // MARK: -
@@ -819,10 +796,8 @@ public extension CGVector
     /// - SeeAlso: `isNearlyPerpendicular(to:tolerance:)`.
     public func projectionParallel(to other: CGVector) -> CGVector
     {
-        if self == CGVector.zero || other == CGVector.zero
-        { return self }
-        else
-        { return (self.dot(with: other) / other.magnitudeSquared) * other }
+        if self == CGVector.zero || other == CGVector.zero { return self }
+        return (self.dot(with: other) / other.magnitudeSquared) * other
     }
 
     /// Returns `true` when `self` and the given vector are **parallel** to
@@ -873,10 +848,8 @@ public extension CGVector
     /// - SeeAlso: `isNearlyPerpendicular(to:tolerance:)`.
     public func projectionPerpendicular(to other: CGVector) -> CGVector
     {
-        if self == CGVector.zero || other == CGVector.zero
-        { return self }
-        else
-        { return (self - self.projectionParallel(to: other)) }
+        if self == CGVector.zero || other == CGVector.zero { return self }
+        return (self - self.projectionParallel(to: other))
     }
 
     /// Returns `true` when `self` and the given vector are **perpendicular** to

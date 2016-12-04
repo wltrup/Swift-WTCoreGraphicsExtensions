@@ -333,6 +333,30 @@ class CGPointExtensionsTests: WTCoreGraphicsExtensionsTestsBase
         }
     }
 
+
+    func test_manhattanDistanceTo()
+    {
+        (1...N).forEach { _ in
+            let x1 = CGFloat.random(rangeMin, rangeMax)
+            let y1 = CGFloat.random(rangeMin, rangeMax)
+            let p1 = CGPoint(x: x1, y: y1)
+
+            let x2 = CGFloat.random(rangeMin, rangeMax)
+            let y2 = CGFloat.random(rangeMin, rangeMax)
+            let p2 = CGPoint(x: x2, y: y2)
+
+            let dx = x1 - x2
+            let dy = y1 - y2
+            expectedValue = abs(dx) + abs(dy)
+
+            resultedValue = p1.manhattanDistance(to: p2)
+            assertAbsoluteDifferenceWithinTolerance()
+
+            resultedValue = p2.manhattanDistance(to: p1)
+            assertAbsoluteDifferenceWithinTolerance()
+        }
+    }
+
     func test_vectorTo()
     {
         (1...N).forEach { _ in

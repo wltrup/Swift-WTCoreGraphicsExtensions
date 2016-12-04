@@ -11,7 +11,6 @@
 		3BC0BA1D1DF2C25F00DE8C93 /* CGPointExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0BA171DF2C25F00DE8C93 /* CGPointExtensionsTests.swift */; };
 		3BC0BA1E1DF2C25F00DE8C93 /* CGVectorExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0BA181DF2C25F00DE8C93 /* CGVectorExtensionsTests.swift */; };
 		3BC0BA201DF2C25F00DE8C93 /* WTCoreGraphicsExtensionsTestsBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0BA1A1DF2C25F00DE8C93 /* WTCoreGraphicsExtensionsTestsBase.swift */; };
-		3BC0BA241DF2C33500DE8C93 /* CGFloatExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0BA231DF2C33500DE8C93 /* CGFloatExtensionsTests.swift */; };
 		581CE8888C46770E1220C5EF /* Pods_WTCoreGraphicsExtensions_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CB519BAC8B0FB3A6EFD1FE7 /* Pods_WTCoreGraphicsExtensions_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,7 +20,6 @@
 		3BC0BA171DF2C25F00DE8C93 /* CGPointExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointExtensionsTests.swift; sourceTree = "<group>"; };
 		3BC0BA181DF2C25F00DE8C93 /* CGVectorExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGVectorExtensionsTests.swift; sourceTree = "<group>"; };
 		3BC0BA1A1DF2C25F00DE8C93 /* WTCoreGraphicsExtensionsTestsBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTCoreGraphicsExtensionsTestsBase.swift; sourceTree = "<group>"; };
-		3BC0BA231DF2C33500DE8C93 /* CGFloatExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatExtensionsTests.swift; sourceTree = "<group>"; };
 		5CB519BAC8B0FB3A6EFD1FE7 /* Pods_WTCoreGraphicsExtensions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTCoreGraphicsExtensions_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACE51AFB9204008FA782 /* WTCoreGraphicsExtensions_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WTCoreGraphicsExtensions_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,10 +81,9 @@
 			isa = PBXGroup;
 			children = (
 				3BC0BA1A1DF2C25F00DE8C93 /* WTCoreGraphicsExtensionsTestsBase.swift */,
-				3BC0BA231DF2C33500DE8C93 /* CGFloatExtensionsTests.swift */,
-				3BC0BA161DF2C25F00DE8C93 /* CGGradientExtensionsTests.swift */,
 				3BC0BA171DF2C25F00DE8C93 /* CGPointExtensionsTests.swift */,
 				3BC0BA181DF2C25F00DE8C93 /* CGVectorExtensionsTests.swift */,
+				3BC0BA161DF2C25F00DE8C93 /* CGGradientExtensionsTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -233,7 +230,6 @@
 			files = (
 				3BC0BA1E1DF2C25F00DE8C93 /* CGVectorExtensionsTests.swift in Sources */,
 				3BC0BA1C1DF2C25F00DE8C93 /* CGGradientExtensionsTests.swift in Sources */,
-				3BC0BA241DF2C33500DE8C93 /* CGFloatExtensionsTests.swift in Sources */,
 				3BC0BA201DF2C25F00DE8C93 /* WTCoreGraphicsExtensionsTestsBase.swift in Sources */,
 				3BC0BA1D1DF2C25F00DE8C93 /* CGPointExtensionsTests.swift in Sources */,
 			);
@@ -334,10 +330,7 @@
 			baseConfigurationReference = 807931B8A24D7F4811B21DB3 /* Pods-WTCoreGraphicsExtensions_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -355,10 +348,7 @@
 			baseConfigurationReference = B6AB286D0704B4BFDA38B2BD /* Pods-WTCoreGraphicsExtensions_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";

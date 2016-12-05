@@ -7,8 +7,10 @@ PODS:
   - WTUIColorExtensions (1.0.0)
 
 DEPENDENCIES:
+  - WTBinaryFloatingPointExtensions
   - WTBoolExtensions
   - WTCoreGraphicsExtensions (from `../`)
+  - WTUIColorExtensions
 
 EXTERNAL SOURCES:
   WTCoreGraphicsExtensions:
@@ -20,6 +22,6 @@ SPEC CHECKSUMS:
   WTCoreGraphicsExtensions: f2c6975b9514a18becc3a3382a3d95018463cf66
   WTUIColorExtensions: b0177d75e9cf415eedc228864d896dc0bc90e606
 
-PODFILE CHECKSUM: 6e8987b085ed2dbba09e528067ae85ab662214c9
+PODFILE CHECKSUM: b6ee593851606aeb5fb240fa972c81d454721616
 
 COCOAPODS: 1.1.1

@@ -2,7 +2,8 @@ use_frameworks!
 
 target 'WTCoreGraphicsExtensions_Tests' do
     pod 'WTCoreGraphicsExtensions', :path => '../'
-    pod 'WTBinaryFloatingPointExtensions'
-    pod 'WTUIColorExtensions'
 end
+
+pod 'WTBinaryFloatingPointExtensions'
+pod 'WTUIColorExtensions'
 

@@ -200,6 +200,11 @@ coverage. The missing 8% test-coverage is due to the fact that `CGGradient` is a
 - [**WTBinaryFloatingPointExtensions**](https://github.com/wltrup/Swift-WTBinaryFloatingPointExtensions)
 - [**WTUIColorExtensions**](https://github.com/wltrup/iOS-Swift-WTUIColorExtensions)
 
+## Changelog
+
+Changes to **WTCoreGraphicsExtensions** are listed
+[here](https://github.com/wltrup/Swift-WTCoreGraphicsExtensions/blob/master/CHANGELOG.md).
+
 ## Installation
 
 **WTCoreGraphicsExtensions** is available through [CocoaPods](http://cocoapods.org). To install

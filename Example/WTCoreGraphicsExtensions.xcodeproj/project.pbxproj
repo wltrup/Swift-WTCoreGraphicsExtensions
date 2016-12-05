@@ -16,6 +16,7 @@
 
 /* Begin PBXFileReference section */
 		110BE56E9295B7F948517C16 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3B7C316F1DF54993008D4CD3 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		3BC0BA161DF2C25F00DE8C93 /* CGGradientExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGGradientExtensionsTests.swift; sourceTree = "<group>"; };
 		3BC0BA171DF2C25F00DE8C93 /* CGPointExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointExtensionsTests.swift; sourceTree = "<group>"; };
 		3BC0BA181DF2C25F00DE8C93 /* CGVectorExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGVectorExtensionsTests.swift; sourceTree = "<group>"; };
@@ -102,6 +103,7 @@
 			children = (
 				CBFCE5352499746831DA47E6 /* WTCoreGraphicsExtensions.podspec */,
 				BBD3036C4599D26A624D22A4 /* README.md */,
+				3B7C316F1DF54993008D4CD3 /* CHANGELOG.md */,
 				110BE56E9295B7F948517C16 /* LICENSE */,
 			);
 			name = "Podspec Metadata";

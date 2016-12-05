@@ -41,6 +41,21 @@
 import Foundation
 
 
+/// An enumeration describing the possible errors that can be thrown when
+/// using functions from the extended `BinaryFloatingPoint` APIs provided
+/// by **WTBinaryFloatingPointExtensions**.
+///
+/// - **allArgumentsAreZero**:
+///            Signifies that a function was called with its arguments
+///            all equal to zero when it was meant to be called with at
+///            least one non-zero argument.
+public enum WTBinaryFloatingPointExtensionsError: Error
+{
+    case allArgumentsAreZero
+}
+
+// MARK: -
+
 public extension BinaryFloatingPoint
 {
     // MARK: - The most commonly used angles in trigonometry
@@ -103,10 +118,16 @@ public extension BinaryFloatingPoint
     /// - Returns: a uniformly-distributed **non-zero** pseudo-random value in
     ///            the **closed** interval [min(a,b), max(a,b)].
     ///
+    /// - Throws: WTBinaryFloatingPointExtensionsError.allArgumentsAreZero
+    ///           if both a = 0 and b = 0.
+    ///
     /// - SeeAlso: `random01` for the special case of [a, b] = [0, 1].
     /// - SeeAlso: `random(a:b:)`.
-    public static func randomNonZero(_ a: Self, _ b: Self) -> Self
+    public static func randomNonZero(_ a: Self, _ b: Self) throws -> Self
     {
+        guard a != 0 || b != 0 else {
+            throw WTBinaryFloatingPointExtensionsError.allArgumentsAreZero
+        }
         var r: Self = 0
         while r == 0 { r = Self.random(a, b) }
         return r

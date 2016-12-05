@@ -1,17 +1,23 @@
 # WTBinaryFloatingPointExtensions
 
-[![CI Status](http://img.shields.io/travis/Wagner Truppel/WTBinaryFloatingPointExtensions.svg?style=flat)](https://travis-ci.org/Wagner Truppel/WTBinaryFloatingPointExtensions)
+[![CI Status](http://img.shields.io/travis/wltrup/Swift-WTBinaryFloatingPointExtensions.svg?style=flat)](https://travis-ci.org/wltrup/Swift-WTBinaryFloatingPointExtensions)
 [![Version](https://img.shields.io/cocoapods/v/WTBinaryFloatingPointExtensions.svg?style=flat)](http://cocoapods.org/pods/WTBinaryFloatingPointExtensions)
 [![License](https://img.shields.io/cocoapods/l/WTBinaryFloatingPointExtensions.svg?style=flat)](http://cocoapods.org/pods/WTBinaryFloatingPointExtensions)
 [![Platform](https://img.shields.io/cocoapods/p/WTBinaryFloatingPointExtensions.svg?style=flat)](http://cocoapods.org/pods/WTBinaryFloatingPointExtensions)
 
 ## What
 
-**WTBinaryFloatingPointExtensions** adds to **all** floating point types some commonly used
-trigonometry-related computed properties, conversions between degrees and radians, and functions
-to generate uniformly distributed (pseudo) random values. Here's the full set of API additions:
+**WTBinaryFloatingPointExtensions** adds to all floating point types conforming to the
+`BinaryFloatingPoint` protocol some commonly used trigonometry-related computed properties,
+conversions between degrees and radians, and functions to generate uniformly distributed
+(pseudo) random values. Here's the full set of API additions:
 
 ```swift
+public enum WTBinaryFloatingPointExtensionsError : Error
+{
+    case allArgumentsAreZero
+}
+
 public static var piOver4: Self { get }
 public static var piOver2: Self { get }
 public static var threePiOver2: Self { get }
@@ -23,7 +29,7 @@ public var degreesInRadians: Self { get }
 public static var random01: Self { get }
 
 public static func random(_ a: Self, _ b: Self) -> Self
-public static func randomNonZero(_ a: Self, _ b: Self) -> Self
+public static func randomNonZero(_ a: Self, _ b: Self) throws -> Self
 ```
 
 ## Why
@@ -33,7 +39,12 @@ of the floating point types.
 
 ## Tests
 
-**WTBinaryFloatingPointExtensions** adds 9 extensions, all fully tested by 13 tests with 100% coverage.
+**WTBinaryFloatingPointExtensions** adds 9 extensions, all fully tested by 14 tests with 100% coverage.
+
+## Changelog
+
+Changes to **WTBinaryFloatingPointExtensions** are listed
+[here](https://github.com/wltrup/Swift-WTBinaryFloatingPointExtensions/blob/master/CHANGELOG.md).
 
 ## Installation
 

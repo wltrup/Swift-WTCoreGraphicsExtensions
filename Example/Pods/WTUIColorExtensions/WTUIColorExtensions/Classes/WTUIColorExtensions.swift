@@ -281,7 +281,7 @@ public extension UIColor
 
     /// Returns a uniformly-distributed pseudo-random value in the
     /// **closed** interval [0, 1].
-    private static var random01: CGFloat
+    fileprivate static var random01: CGFloat
     { return CGFloat(arc4random_uniform(UInt32.max)) / CGFloat(UInt32.max - 1) }
 }
 

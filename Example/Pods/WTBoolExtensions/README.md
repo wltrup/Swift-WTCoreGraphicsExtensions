@@ -1,6 +1,6 @@
 # WTBoolExtensions
 
-[![CI Status](http://img.shields.io/travis/Wagner Truppel/WTBoolExtensions.svg?style=flat)](https://travis-ci.org/Wagner Truppel/WTBoolExtensions)
+[![CI Status](http://img.shields.io/travis/wltrup/WTBoolExtensions.svg?style=flat)](https://travis-ci.org/wltrup/WTBoolExtensions)
 [![Version](https://img.shields.io/cocoapods/v/WTBoolExtensions.svg?style=flat)](http://cocoapods.org/pods/WTBoolExtensions)
 [![License](https://img.shields.io/cocoapods/l/WTBoolExtensions.svg?style=flat)](http://cocoapods.org/pods/WTBoolExtensions)
 [![Platform](https://img.shields.io/cocoapods/p/WTBoolExtensions.svg?style=flat)](http://cocoapods.org/pods/WTBoolExtensions)

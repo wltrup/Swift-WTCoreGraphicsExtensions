@@ -1,6 +1,6 @@
 # WTUIColorExtensions
 
-[![CI Status](http://img.shields.io/travis/Wagner Truppel/WTUIColorExtensions.svg?style=flat)](https://travis-ci.org/Wagner Truppel/WTUIColorExtensions)
+[![CI Status](http://img.shields.io/travis/wltrup/WTUIColorExtensions.svg?style=flat)](https://travis-ci.org/wltrup/WTUIColorExtensions)
 [![Version](https://img.shields.io/cocoapods/v/WTUIColorExtensions.svg?style=flat)](http://cocoapods.org/pods/WTUIColorExtensions)
 [![License](https://img.shields.io/cocoapods/l/WTUIColorExtensions.svg?style=flat)](http://cocoapods.org/pods/WTUIColorExtensions)
 [![Platform](https://img.shields.io/cocoapods/p/WTUIColorExtensions.svg?style=flat)](http://cocoapods.org/pods/WTUIColorExtensions)

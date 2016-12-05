@@ -96,7 +96,7 @@ class WTCoreGraphicsExtensionsTestsBase: XCTestCase
         tolerance = 1e-10
         N = 100
 
-        rangeMin = CGFloat.random(-10, 10)
-        rangeMax = CGFloat.random(-10, 10)
+        rangeMin = -10
+        rangeMax =  10
     }
 }

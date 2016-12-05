@@ -20,8 +20,8 @@ class CGGradientExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     
     override func setUp() {
         super.setUp()
-        numberOfColors = Int(abs(CGFloat.randomNonZero(rangeMin, rangeMax)))
-        numberOfLocations = Int(abs(CGFloat.randomNonZero(rangeMin, rangeMax)))
+        numberOfColors = Int(abs(try! CGFloat.randomNonZero(rangeMin, rangeMax)))
+        numberOfLocations = Int(abs(try! CGFloat.randomNonZero(rangeMin, rangeMax)))
     }
 
     // MARK: -

@@ -52,7 +52,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     func test_initFromMagnitudeAndAngleThrowsOnNegativeMagnitude()
     {
         (1...N).forEach { _ in
-            let m = -CGFloat.randomNonZero(0, abs(rangeMax))
+            let m = try! -CGFloat.randomNonZero(0, abs(rangeMax))
             let a = CGFloat.random(0, 360).degreesInRadians
 
             do {
@@ -108,7 +108,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     func test_initFromMagnitudeAndSineCosineThrowsOnNegativeMagnitude()
     {
         (1...N).forEach { _ in
-            let m = -CGFloat.randomNonZero(0, abs(rangeMax))
+            let m = try! -CGFloat.randomNonZero(0, abs(rangeMax))
             let sina = CGFloat.random(-1, 1)
             let cosa = CGFloat.random(-1, 1)
 
@@ -212,7 +212,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
         (1...N).forEach { _ in
             let v1 = CGVector.random(rangeMin, rangeMax)
             let v2 = CGVector.random(rangeMin, rangeMax)
-            let tol = -CGFloat.randomNonZero(0, abs(rangeMax))
+            let tol = try! -CGFloat.randomNonZero(0, abs(rangeMax))
 
             do {
                 let _ = try v2.isNearlyEqual(to: v1, tolerance: tol)
@@ -249,7 +249,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
             let v1 = CGVector.random(rangeMin, rangeMax)
 
             var v2 = v1
-            v2.dx += CGFloat.randomNonZero(rangeMin, rangeMax)
+            v2.dx += try! CGFloat.randomNonZero(rangeMin, rangeMax)
 
             nearlyEqual = try! v2.isNearlyEqual(to: v1, tolerance: 0.0)
             XCTAssertFalse(nearlyEqual)
@@ -266,7 +266,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
             let v1 = CGVector.random(rangeMin, rangeMax)
 
             var v2 = v1
-            v2.dy += CGFloat.randomNonZero(rangeMin, rangeMax)
+            v2.dy += try! CGFloat.randomNonZero(rangeMin, rangeMax)
 
             nearlyEqual = try! v2.isNearlyEqual(to: v1, tolerance: 0.0)
             XCTAssertFalse(nearlyEqual)
@@ -283,8 +283,8 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
             let v1 = CGVector.random(rangeMin, rangeMax)
 
             var v2 = v1
-            v2.dx += CGFloat.randomNonZero(rangeMin, rangeMax)
-            v2.dy += CGFloat.randomNonZero(rangeMin, rangeMax)
+            v2.dx += try! CGFloat.randomNonZero(rangeMin, rangeMax)
+            v2.dy += try! CGFloat.randomNonZero(rangeMin, rangeMax)
 
             nearlyEqual = try! v2.isNearlyEqual(to: v1, tolerance: 0.0)
             XCTAssertFalse(nearlyEqual)
@@ -338,7 +338,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     {
         (1...N).forEach { _ in
             let v = CGVector.random(rangeMin, rangeMax)
-            let tol = -CGFloat.randomNonZero(0, abs(rangeMax))
+            let tol = try! -CGFloat.randomNonZero(0, abs(rangeMax))
 
             do {
                 let _ = try v.isNearlyZero(tolerance: tol)
@@ -362,7 +362,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     func test_isNearlyZeroWithZeroTolerance1()
     {
         (1...N).forEach { _ in
-            let dx = CGFloat.randomNonZero(rangeMin, rangeMax)
+            let dx = try! CGFloat.randomNonZero(rangeMin, rangeMax)
             let v = CGVector(dx: dx, dy: 0)
 
             let nearlyZero = try! v.isNearlyZero(tolerance: 0.0)
@@ -373,7 +373,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     func test_isNearlyZeroWithZeroTolerance2()
     {
         (1...N).forEach { _ in
-            let dy = CGFloat.randomNonZero(rangeMin, rangeMax)
+            let dy = try! CGFloat.randomNonZero(rangeMin, rangeMax)
             let v = CGVector(dx: 0, dy: dy)
 
             let nearlyZero = try! v.isNearlyZero(tolerance: 0.0)
@@ -384,8 +384,8 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     func test_isNearlyZeroWithZeroTolerance3()
     {
         (1...N).forEach { _ in
-            let dx = CGFloat.randomNonZero(rangeMin, rangeMax)
-            let dy = CGFloat.randomNonZero(rangeMin, rangeMax)
+            let dx = try! CGFloat.randomNonZero(rangeMin, rangeMax)
+            let dy = try! CGFloat.randomNonZero(rangeMin, rangeMax)
 
             let v = CGVector(dx: dx, dy: dy)
             let nearlyZero = try! v.isNearlyZero(tolerance: 0.0)
@@ -476,7 +476,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     func test_isNormalizableReturnsTrueForNonZeroVector1()
     {
         (1...N).forEach { _ in
-            let dx = CGFloat.randomNonZero(rangeMin, rangeMax)
+            let dx = try! CGFloat.randomNonZero(rangeMin, rangeMax)
             let dy = CGFloat(0)
             let v = CGVector(dx: dx, dy: dy)
             XCTAssertTrue(v.isNormalizable)
@@ -487,7 +487,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     {
         (1...N).forEach { _ in
             let dx = CGFloat(0)
-            let dy = CGFloat.randomNonZero(rangeMin, rangeMax)
+            let dy = try! CGFloat.randomNonZero(rangeMin, rangeMax)
             let v = CGVector(dx: dx, dy: dy)
             XCTAssertTrue(v.isNormalizable)
         }
@@ -496,8 +496,8 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     func test_isNormalizableReturnsTrueForNonZeroVector3()
     {
         (1...N).forEach { _ in
-            let dx = CGFloat.randomNonZero(rangeMin, rangeMax)
-            let dy = CGFloat.randomNonZero(rangeMin, rangeMax)
+            let dx = try! CGFloat.randomNonZero(rangeMin, rangeMax)
+            let dy = try! CGFloat.randomNonZero(rangeMin, rangeMax)
             let v = CGVector(dx: dx, dy: dy)
             XCTAssertTrue(v.isNormalizable)
         }
@@ -643,7 +643,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
             let dy = CGFloat.random(rangeMin, rangeMax)
 
             var v = CGVector(dx: dx, dy: dy)
-            let s = -CGFloat.randomNonZero(0, abs(rangeMax))
+            let s = try! -CGFloat.randomNonZero(0, abs(rangeMax))
             do {
                 try v.scaleMagnitudeDownToIfLarger(than: s)
                 XCTFail()
@@ -677,7 +677,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
             let dy = CGFloat.random(rangeMin, rangeMax)
             let mag = CGFloat(sqrt(dx*dx + dy*dy))
 
-            let s = CGFloat.randomNonZero(0, abs(rangeMax))
+            let s = try! CGFloat.randomNonZero(0, abs(rangeMax))
 
             var v = CGVector(dx: dx, dy: dy)
             let m = v.magnitude
@@ -711,7 +711,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
             let dy = CGFloat.random(rangeMin, rangeMax)
 
             var v = CGVector(dx: dx, dy: dy)
-            let s = -CGFloat.randomNonZero(0, abs(rangeMax))
+            let s = try! -CGFloat.randomNonZero(0, abs(rangeMax))
             do {
                 try v.scaleMagnitudeUpToIfSmaller(than: s)
                 XCTFail()
@@ -726,7 +726,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
 
     func test_scaleMagnitudeUpToIfSmallerThanThrowsOnZeroVector()
     {
-        let s = CGFloat.randomNonZero(0, abs(rangeMax))
+        let s = try! CGFloat.randomNonZero(0, abs(rangeMax))
         var v = CGVector.zero
         do {
             try v.scaleMagnitudeUpToIfSmaller(than: s)
@@ -761,7 +761,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
             let dy = CGFloat.random(rangeMin, rangeMax)
             let mag = CGFloat(sqrt(dx*dx + dy*dy))
 
-            let s = CGFloat.randomNonZero(0, abs(rangeMax))
+            let s = try! CGFloat.randomNonZero(0, abs(rangeMax))
 
             var v = CGVector(dx: dx, dy: dy)
             let m = v.magnitude
@@ -797,7 +797,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
             let dy = CGFloat.random(rangeMin, rangeMax)
 
             let v = CGVector(dx: dx, dy: dy)
-            let s = -CGFloat.randomNonZero(0, abs(rangeMax))
+            let s = try! -CGFloat.randomNonZero(0, abs(rangeMax))
             do {
                 _ = try v.magnitudeScaledDownToIfLarger(than: s)
                 XCTFail()
@@ -832,7 +832,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
 
             let u = CGVector(dx: dx, dy: dy)
             let m = u.magnitude
-            let s = CGFloat.randomNonZero(0, abs(rangeMax))
+            let s = try! CGFloat.randomNonZero(0, abs(rangeMax))
 
             let expectedDx: CGFloat
             let expectedDy: CGFloat
@@ -863,7 +863,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
             let dy = CGFloat.random(rangeMin, rangeMax)
 
             let v = CGVector(dx: dx, dy: dy)
-            let s = -CGFloat.randomNonZero(0, abs(rangeMax))
+            let s = try! -CGFloat.randomNonZero(0, abs(rangeMax))
             do {
                 _ = try v.magnitudeScaledUpToIfSmaller(than: s)
                 XCTFail()
@@ -879,7 +879,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     func test_magnitudeScaledUpToIfSmallerThrowsOnZeroVector()
     {
         let v = CGVector.zero
-        let s = CGFloat.randomNonZero(0, abs(rangeMax))
+        let s = try! CGFloat.randomNonZero(0, abs(rangeMax))
         do {
             _ = try v.magnitudeScaledUpToIfSmaller(than: s)
             XCTFail()
@@ -913,7 +913,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
 
             let u = CGVector(dx: dx, dy: dy)
             let m = u.magnitude
-            let s = CGFloat.randomNonZero(0, abs(rangeMax))
+            let s = try! CGFloat.randomNonZero(0, abs(rangeMax))
 
             let expectedDx: CGFloat
             let expectedDy: CGFloat
@@ -995,7 +995,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
             if  reducedAngleInDegs < 0 { reducedAngleInDegs += 360 }
             let reducedAngleInRads = CGFloat(reducedAngleInDegs).degreesInRadians
 
-            let m = CGFloat.randomNonZero(0, abs(rangeMax))
+            let m = try! CGFloat.randomNonZero(0, abs(rangeMax))
             let a = CGFloat(angleInDegs).degreesInRadians
             let v = try! CGVector(magnitude: m, angle: a)
 
@@ -1031,7 +1031,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     {
         (-720...720).forEach { angleInDegs in
             let angleInRads = CGFloat(angleInDegs).degreesInRadians
-            let m = CGFloat.randomNonZero(0, abs(rangeMax))
+            let m = try! CGFloat.randomNonZero(0, abs(rangeMax))
 
             let v = try! CGVector(magnitude: m, angle: angleInRads)
 
@@ -1063,7 +1063,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     {
         (-720...720).forEach { angleInDegs in
             let angleInRads = CGFloat(angleInDegs).degreesInRadians
-            let m = CGFloat.randomNonZero(0, abs(rangeMax))
+            let m = try! CGFloat.randomNonZero(0, abs(rangeMax))
 
             let v = try! CGVector(magnitude: m, angle: angleInRads)
 
@@ -1104,7 +1104,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     {
         (-720...720).forEach { angleInDegs in
             let angleInRads = CGFloat(angleInDegs).degreesInRadians
-            let m = CGFloat.randomNonZero(0, abs(rangeMax))
+            let m = try! CGFloat.randomNonZero(0, abs(rangeMax))
             let v = try! CGVector(magnitude: m, angle: angleInRads)
 
             expectedValue = CGFloat(tan(angleInRads))
@@ -1123,11 +1123,11 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
         (-720...720).forEach { angleInDegs in
             let angleInRads = CGFloat(angleInDegs).degreesInRadians
 
-            let m1 = CGFloat.randomNonZero(0, abs(rangeMax))
+            let m1 = try! CGFloat.randomNonZero(0, abs(rangeMax))
             let a1 = CGFloat.random(0, 360).degreesInRadians
             let v1 = try! CGVector(magnitude: m1, angle: a1)
 
-            let m2 = CGFloat.randomNonZero(0, abs(rangeMax))
+            let m2 = try! CGFloat.randomNonZero(0, abs(rangeMax))
             let a2 = a1 + angleInRads
             let v2 = try! CGVector(magnitude: m2, angle: a2)
 
@@ -1149,11 +1149,11 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
         (-720...720).forEach { angleInDegs in
             let angleInRads = CGFloat(angleInDegs).degreesInRadians
 
-            let m1 = CGFloat.randomNonZero(0, abs(rangeMax))
+            let m1 = try! CGFloat.randomNonZero(0, abs(rangeMax))
             let a1 = CGFloat.random(0, 360).degreesInRadians
             let v1 = try! CGVector(magnitude: m1, angle: a1)
 
-            let m2 = CGFloat.randomNonZero(0, abs(rangeMax))
+            let m2 = try! CGFloat.randomNonZero(0, abs(rangeMax))
             let a2 = a1 + angleInRads
             let v2 = try! CGVector(magnitude: m2, angle: a2)
 
@@ -1188,7 +1188,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
 
     func test_projectionParallelToUnitVectorX()
     {
-        let m = CGFloat.randomNonZero(0, abs(rangeMax))
+        let m = try! CGFloat.randomNonZero(0, abs(rangeMax))
         let a = CGFloat.random(0, 360).degreesInRadians
         let u = try! CGVector(magnitude: m, angle: a)
 
@@ -1200,7 +1200,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
 
     func test_projectionParallelToUnitVectorY()
     {
-        let m = CGFloat.randomNonZero(0, abs(rangeMax))
+        let m = try! CGFloat.randomNonZero(0, abs(rangeMax))
         let a = CGFloat.random(0, 360).degreesInRadians
         let u = try! CGVector(magnitude: m, angle: a)
 
@@ -1215,7 +1215,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
         (1...N).forEach { _ in
             let v1 = CGVector.random(rangeMin, rangeMax)
             let v2 = CGVector.random(rangeMin, rangeMax)
-            let tol = -CGFloat.randomNonZero(0, abs(rangeMax))
+            let tol = try! -CGFloat.randomNonZero(0, abs(rangeMax))
 
             do {
                 let _ = try v2.isNearlyParallel(to: v1, tolerance: tol)
@@ -1252,7 +1252,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
             let v1 = CGVector.random(rangeMin, rangeMax)
 
             var v2 = v1
-            v2.dx += CGFloat.randomNonZero(rangeMin, rangeMax)
+            v2.dx += try! CGFloat.randomNonZero(rangeMin, rangeMax)
 
             nearlyParallel = try! v2.isNearlyEqual(to: v1, tolerance: 0.0)
             XCTAssertFalse(nearlyParallel)
@@ -1269,7 +1269,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
             let v1 = CGVector.random(rangeMin, rangeMax)
 
             var v2 = v1
-            v2.dy += CGFloat.randomNonZero(rangeMin, rangeMax)
+            v2.dy += try! CGFloat.randomNonZero(rangeMin, rangeMax)
 
             nearlyParallel = try! v2.isNearlyEqual(to: v1, tolerance: 0.0)
             XCTAssertFalse(nearlyParallel)
@@ -1286,8 +1286,8 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
             let v1 = CGVector.random(rangeMin, rangeMax)
 
             var v2 = v1
-            v2.dx += CGFloat.randomNonZero(rangeMin, rangeMax)
-            v2.dy += CGFloat.randomNonZero(rangeMin, rangeMax)
+            v2.dx += try! CGFloat.randomNonZero(rangeMin, rangeMax)
+            v2.dy += try! CGFloat.randomNonZero(rangeMin, rangeMax)
 
             nearlyParallel = try! v2.isNearlyEqual(to: v1, tolerance: 0.0)
             XCTAssertFalse(nearlyParallel)
@@ -1368,7 +1368,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
 
     func test_projectionPerpendicularToUnitVectorX()
     {
-        let m = CGFloat.randomNonZero(0, abs(rangeMax))
+        let m = try! CGFloat.randomNonZero(0, abs(rangeMax))
         let a = CGFloat.random(0, 360).degreesInRadians
         let u = try! CGVector(magnitude: m, angle: a)
 
@@ -1380,7 +1380,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
 
     func test_projectionPerpendicularToUnitVectorY()
     {
-        let m = CGFloat.randomNonZero(0, abs(rangeMax))
+        let m = try! CGFloat.randomNonZero(0, abs(rangeMax))
         let a = CGFloat.random(0, 360).degreesInRadians
         let u = try! CGVector(magnitude: m, angle: a)
 
@@ -1395,7 +1395,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
         (1...N).forEach { _ in
             let v1 = CGVector.random(rangeMin, rangeMax)
             let v2 = CGVector.random(rangeMin, rangeMax)
-            let tol = -CGFloat.randomNonZero(0, abs(rangeMax))
+            let tol = try! -CGFloat.randomNonZero(0, abs(rangeMax))
 
             do {
                 let _ = try v2.isNearlyPerpendicular(to: v1, tolerance: tol)
@@ -1432,7 +1432,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
             let v1 = CGVector.random(rangeMin, rangeMax)
 
             var v2 = v1
-            v2.dx += CGFloat.randomNonZero(rangeMin, rangeMax)
+            v2.dx += try! CGFloat.randomNonZero(rangeMin, rangeMax)
 
             nearlyPerpendicular = try! v2.isNearlyEqual(to: v1, tolerance: 0.0)
             XCTAssertFalse(nearlyPerpendicular)
@@ -1449,7 +1449,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
             let v1 = CGVector.random(rangeMin, rangeMax)
 
             var v2 = v1
-            v2.dy += CGFloat.randomNonZero(rangeMin, rangeMax)
+            v2.dy += try! CGFloat.randomNonZero(rangeMin, rangeMax)
 
             nearlyPerpendicular = try! v2.isNearlyEqual(to: v1, tolerance: 0.0)
             XCTAssertFalse(nearlyPerpendicular)
@@ -1466,8 +1466,8 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
             let v1 = CGVector.random(rangeMin, rangeMax)
 
             var v2 = v1
-            v2.dx += CGFloat.randomNonZero(rangeMin, rangeMax)
-            v2.dy += CGFloat.randomNonZero(rangeMin, rangeMax)
+            v2.dx += try! CGFloat.randomNonZero(rangeMin, rangeMax)
+            v2.dy += try! CGFloat.randomNonZero(rangeMin, rangeMax)
 
             nearlyPerpendicular = try! v2.isNearlyEqual(to: v1, tolerance: 0.0)
             XCTAssertFalse(nearlyPerpendicular)
@@ -1526,7 +1526,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     func test_rotateClockwiseBy()
     {
         (1...N).forEach { _ in
-            let m = CGFloat.randomNonZero(0, abs(rangeMax))
+            let m = try! CGFloat.randomNonZero(0, abs(rangeMax))
             let a = CGFloat.random(0, 360).degreesInRadians
             var u = try! CGVector(magnitude: m, angle: a)
 
@@ -1544,7 +1544,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     func test_rotateClockwiseSineCosine()
     {
         (1...N).forEach { _ in
-            let m = CGFloat.randomNonZero(0, abs(rangeMax))
+            let m = try! CGFloat.randomNonZero(0, abs(rangeMax))
             let a = CGFloat.random(0, 360).degreesInRadians
             var u = try! CGVector(magnitude: m, angle: a)
 
@@ -1565,7 +1565,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     func test_rotatedClockwiseBy()
     {
         (1...N).forEach { _ in
-            let m = CGFloat.randomNonZero(0, abs(rangeMax))
+            let m = try! CGFloat.randomNonZero(0, abs(rangeMax))
             let a = CGFloat.random(0, 360).degreesInRadians
             let u = try! CGVector(magnitude: m, angle: a)
 
@@ -1581,7 +1581,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     func test_rotatedClockwiseSineCosine()
     {
         (1...N).forEach { _ in
-            let m = CGFloat.randomNonZero(0, abs(rangeMax))
+            let m = try! CGFloat.randomNonZero(0, abs(rangeMax))
             let a = CGFloat.random(0, 360).degreesInRadians
             let u = try! CGVector(magnitude: m, angle: a)
 
@@ -1600,7 +1600,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     func test_rotateCounterClockwiseBy()
     {
         (1...N).forEach { _ in
-            let m = CGFloat.randomNonZero(0, abs(rangeMax))
+            let m = try! CGFloat.randomNonZero(0, abs(rangeMax))
             let a = CGFloat.random(0, 360).degreesInRadians
             var u = try! CGVector(magnitude: m, angle: a)
 
@@ -1618,7 +1618,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     func test_rotateCounterClockwiseSineCosine()
     {
         (1...N).forEach { _ in
-            let m = CGFloat.randomNonZero(0, abs(rangeMax))
+            let m = try! CGFloat.randomNonZero(0, abs(rangeMax))
             let a = CGFloat.random(0, 360).degreesInRadians
             var u = try! CGVector(magnitude: m, angle: a)
 
@@ -1639,7 +1639,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     func test_rotatedCounterClockwiseBy()
     {
         (1...N).forEach { _ in
-            let m = CGFloat.randomNonZero(0, abs(rangeMax))
+            let m = try! CGFloat.randomNonZero(0, abs(rangeMax))
             let a = CGFloat.random(0, 360).degreesInRadians
             let u = try! CGVector(magnitude: m, angle: a)
 
@@ -1655,7 +1655,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     func test_rotatedCounterClockwiseSineCosine()
     {
         (1...N).forEach { _ in
-            let m = CGFloat.randomNonZero(0, abs(rangeMax))
+            let m = try! CGFloat.randomNonZero(0, abs(rangeMax))
             let a = CGFloat.random(0, 360).degreesInRadians
             let u = try! CGVector(magnitude: m, angle: a)
 
@@ -1754,7 +1754,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
             let dy = CGFloat.random(rangeMin, rangeMax)
             let v = CGVector(dx: dx, dy: dy)
 
-            let s = CGFloat.randomNonZero(rangeMin, rangeMax)
+            let s = try! CGFloat.randomNonZero(rangeMin, rangeMax)
 
             expectedVector = CGVector(dx: v.dx / s, dy: v.dy / s)
             resultedVector = try! v / s
@@ -1861,7 +1861,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
             let dy = CGFloat.random(rangeMin, rangeMax)
             let v = CGVector(dx: dx, dy: dy)
 
-            let s = CGFloat.randomNonZero(rangeMin, rangeMax)
+            let s = try! CGFloat.randomNonZero(rangeMin, rangeMax)
 
             var u = v
             try! u /= s

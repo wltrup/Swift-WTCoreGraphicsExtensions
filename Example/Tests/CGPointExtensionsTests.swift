@@ -74,7 +74,7 @@ class CGPointExtensionsTests: WTCoreGraphicsExtensionsTestsBase
         (1...N).forEach { _ in
             let p1 = CGPoint.random(rangeMin, rangeMax)
             let p2 = CGPoint.random(rangeMin, rangeMax)
-            let tol = -CGFloat.randomNonZero(0, abs(rangeMax))
+            let tol = try! -CGFloat.randomNonZero(0, abs(rangeMax))
 
             do {
                 let _ = try p2.isNearlyEqual(to: p1, tolerance: tol)
@@ -110,7 +110,7 @@ class CGPointExtensionsTests: WTCoreGraphicsExtensionsTestsBase
             let p1 = CGPoint.random(rangeMin, rangeMax)
 
             var p2 = p1
-            p2.x += CGFloat.randomNonZero(rangeMin, rangeMax)
+            p2.x += try! CGFloat.randomNonZero(rangeMin, rangeMax)
 
             nearlyEqual = try! p2.isNearlyEqual(to: p1, tolerance: 0.0)
             XCTAssertFalse(nearlyEqual)
@@ -127,7 +127,7 @@ class CGPointExtensionsTests: WTCoreGraphicsExtensionsTestsBase
             let p1 = CGPoint.random(rangeMin, rangeMax)
 
             var p2 = p1
-            p2.y += CGFloat.randomNonZero(rangeMin, rangeMax)
+            p2.y += try! CGFloat.randomNonZero(rangeMin, rangeMax)
 
             nearlyEqual = try! p2.isNearlyEqual(to: p1, tolerance: 0.0)
             XCTAssertFalse(nearlyEqual)
@@ -144,8 +144,8 @@ class CGPointExtensionsTests: WTCoreGraphicsExtensionsTestsBase
             let p1 = CGPoint.random(rangeMin, rangeMax)
 
             var p2 = p1
-            p2.x += CGFloat.randomNonZero(rangeMin, rangeMax)
-            p2.y += CGFloat.randomNonZero(rangeMin, rangeMax)
+            p2.x += try! CGFloat.randomNonZero(rangeMin, rangeMax)
+            p2.y += try! CGFloat.randomNonZero(rangeMin, rangeMax)
 
             nearlyEqual = try! p2.isNearlyEqual(to: p1, tolerance: 0.0)
             XCTAssertFalse(nearlyEqual)
@@ -199,7 +199,7 @@ class CGPointExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     {
         (1...N).forEach { _ in
             let p = CGPoint.random(rangeMin, rangeMax)
-            let tol = -CGFloat.randomNonZero(0, abs(rangeMax))
+            let tol = try! -CGFloat.randomNonZero(0, abs(rangeMax))
 
             do {
                 let _ = try p.isNearlyZero(tolerance: tol)
@@ -223,7 +223,7 @@ class CGPointExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     func test_isNearlyZeroWithZeroTolerance1()
     {
         (1...N).forEach { _ in
-            let a = CGFloat.randomNonZero(rangeMin, rangeMax)
+            let a = try! CGFloat.randomNonZero(rangeMin, rangeMax)
             let p = CGPoint(x: a, y: 0)
             let nearlyZero = try! p.isNearlyZero(tolerance: 0.0)
             XCTAssertFalse(nearlyZero)
@@ -233,7 +233,7 @@ class CGPointExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     func test_isNearlyZeroWithZeroTolerance2()
     {
         (1...N).forEach { _ in
-            let b = CGFloat.randomNonZero(rangeMin, rangeMax)
+            let b = try! CGFloat.randomNonZero(rangeMin, rangeMax)
             let p = CGPoint(x: 0, y: b)
             let nearlyZero = try! p.isNearlyZero(tolerance: 0.0)
             XCTAssertFalse(nearlyZero)
@@ -243,8 +243,8 @@ class CGPointExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     func test_isNearlyZeroWithZeroTolerance3()
     {
         (1...N).forEach { _ in
-            let a = CGFloat.randomNonZero(rangeMin, rangeMax)
-            let b = CGFloat.randomNonZero(rangeMin, rangeMax)
+            let a = try! CGFloat.randomNonZero(rangeMin, rangeMax)
+            let b = try! CGFloat.randomNonZero(rangeMin, rangeMax)
             let p = CGPoint(x: a, y: b)
             let nearlyZero = try! p.isNearlyZero(tolerance: 0.0)
             XCTAssertFalse(nearlyZero)

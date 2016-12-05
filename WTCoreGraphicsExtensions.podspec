@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.source_files = 'WTCoreGraphicsExtensions/Classes/**/*'
   s.frameworks = 'UIKit'
-  s.dependency 'WTBinaryFloatingPointExtensions'
-  s.dependency 'WTUIColorExtensions'
+#  s.dependency 'WTBinaryFloatingPointExtensions'
+#  s.dependency 'WTUIColorExtensions'
 end

@@ -4,6 +4,6 @@ target 'WTCoreGraphicsExtensions_Tests' do
     pod 'WTCoreGraphicsExtensions', :path => '../'
 end
 
-pod 'WTBinaryFloatingPointExtensions'
-pod 'WTUIColorExtensions'
+pod 'WTBinaryFloatingPointExtensions', :git => 'https://github.com/wltrup/Swift-WTBinaryFloatingPointExtensions.git'
+pod 'WTUIColorExtensions', :git => 'https://github.com/wltrup/iOS-Swift-WTUIColorExtensions.git'
 

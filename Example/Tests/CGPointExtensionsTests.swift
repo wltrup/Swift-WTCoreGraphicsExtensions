@@ -50,7 +50,7 @@ class CGPointExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     func test_randomRandomness()
     {
         N = 10_000
-        tolerance = 1e-2
+        tolerance = 1e-1
 
         enum Coordinate {
             case x
@@ -190,7 +190,7 @@ class CGPointExtensionsTests: WTCoreGraphicsExtensionsTestsBase
         testNearlyEqual(maxDelta: tolerance / 2, shouldFail: false)
         testNearlyEqual(maxDelta: 10 * tolerance, shouldFail: true)
 
-        tolerance = 1e-4 // custom non-zero tolerance
+        tolerance = 1e-2 // custom non-zero tolerance
         testNearlyEqual(maxDelta: tolerance / 2, shouldFail: false)
         testNearlyEqual(maxDelta: 10 * tolerance, shouldFail: true)
     }
@@ -281,7 +281,7 @@ class CGPointExtensionsTests: WTCoreGraphicsExtensionsTestsBase
         testNearlyZero(maxDelta: tolerance / 2, shouldFail: false)
         testNearlyZero(maxDelta: 10 * tolerance, shouldFail: true)
 
-        tolerance = 1e-4 // custom non-zero tolerance
+        tolerance = 1e-2 // custom non-zero tolerance
         testNearlyZero(maxDelta: tolerance / 2, shouldFail: false)
         testNearlyZero(maxDelta: 10 * tolerance, shouldFail: true)
     }

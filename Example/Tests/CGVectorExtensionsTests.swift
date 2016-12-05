@@ -162,7 +162,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     func test_random()
     {
         N = 10_000
-        tolerance = 1e-2
+        tolerance = 1e-1
 
         enum Coordinate {
             case dx
@@ -329,7 +329,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
         testNearlyEqual(maxDelta: tolerance / 2, shouldFail: false)
         testNearlyEqual(maxDelta: 10 * tolerance, shouldFail: true)
 
-        tolerance = 1e-4 // custom non-zero tolerance
+        tolerance = 1e-2 // custom non-zero tolerance
         testNearlyEqual(maxDelta: tolerance / 2, shouldFail: false)
         testNearlyEqual(maxDelta: 10 * tolerance, shouldFail: true)
     }
@@ -423,7 +423,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
         testNearlyZero(maxDelta: tolerance / 2, shouldFail: false)
         testNearlyZero(maxDelta: 10 * tolerance, shouldFail: true)
 
-        tolerance = 1e-4 // custom non-zero tolerance
+        tolerance = 1e-2 // custom non-zero tolerance
         testNearlyZero(maxDelta: tolerance / 2, shouldFail: false)
         testNearlyZero(maxDelta: 10 * tolerance, shouldFail: true)
     }
@@ -1337,7 +1337,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
         testNearlyParallel(shouldFail: false)
         testNearlyParallel(shouldFail: true)
 
-        tolerance = 1e-4 // custom non-zero tolerance
+        tolerance = 1e-2 // custom non-zero tolerance
         testNearlyParallel(shouldFail: false)
         testNearlyParallel(shouldFail: true)
     }
@@ -1518,7 +1518,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
         testNearlyPerpendicular(shouldFail: false)
         testNearlyPerpendicular(shouldFail: true)
 
-        tolerance = 1e-4 // custom non-zero tolerance
+        tolerance = 1e-2 // custom non-zero tolerance
         testNearlyPerpendicular(shouldFail: false)
         testNearlyPerpendicular(shouldFail: true)
     }

@@ -93,7 +93,7 @@ class WTCoreGraphicsExtensionsTestsBase: XCTestCase
     {
         super.setUp()
 
-        tolerance = 1e-12
+        tolerance = 1e-10
         N = 100
 
         rangeMin = CGFloat.random(-10, 10)

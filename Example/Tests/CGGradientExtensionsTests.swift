@@ -88,34 +88,4 @@ class CGGradientExtensionsTests: WTCoreGraphicsExtensionsTestsBase
             { XCTAssertEqual(resultedError, expectedError) }
         }
     }
-
-    // Hmm... this test never passes. Apparently UIColor instances are always backed
-    // by components in the RGB space, even when initialised with HSB components.
-    // TODO: investigate whether UIColor instances are always backed by components in the RGB space
-//    func test_rgbaGradientThrowsInvalidColorSpace()
-//    {
-//        numberOfColors = numberOfColors + 2
-//        numberOfLocations = numberOfColors
-//
-//        let colors = (0 ... numberOfColors).map { _ in
-//            UIColor(hue: CGFloat.random01,
-//                    saturation: CGFloat.random01,
-//                    brightness: CGFloat.random01,
-//                    alpha: CGFloat.random01)
-//        }
-//        let locations = (0 ... numberOfLocations).map { _ in CGFloat.random01 }
-//
-//        do {
-//            let _ = try CGGradient.rgbaGradient(with: colors, at: locations)
-//            XCTFail()
-//        }
-//        catch {
-//            let expectedError = WTUIColorError.invalidColorSpace
-//            let resultedError = error
-//
-//            XCTAssertTrue(resultedError is WTUIColorError)
-//            if let resultedError = resultedError as? WTUIColorError
-//            { XCTAssertEqual(resultedError, expectedError) }
-//        }
-//    }
 }

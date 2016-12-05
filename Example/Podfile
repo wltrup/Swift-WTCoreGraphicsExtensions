@@ -4,6 +4,5 @@ target 'WTCoreGraphicsExtensions_Tests' do
     pod 'WTCoreGraphicsExtensions', :path => '../'
     pod 'WTBinaryFloatingPointExtensions'
     pod 'WTUIColorExtensions'
-    pod 'WTBoolExtensions'
 end
 

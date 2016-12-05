@@ -7,193 +7,154 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18821D53C103BA0066BF59619998D2E9 /* WTBinaryFloatingPointExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B3B19FEC83D134081B25743D045852 /* WTBinaryFloatingPointExtensions.framework */; };
-		2D5DD5005F92E85A0AFFB9447B40CB04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D59C91D88DC585F5F863B91318729D /* Foundation.framework */; };
-		41746DD3C66F60C81922584F4159BAEC /* Pods-WTCoreGraphicsExtensions_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFDB67DB1D5EC9EFA7E8377FC6331961 /* Pods-WTCoreGraphicsExtensions_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A8188930EF9389B0ECA40FB3A69D312 /* WTUIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761A80A0E629CD0408C636E144AF478B /* WTUIColorExtensions.swift */; };
-		5E4D0A209935C1D7B06AFFDCD889CCC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D59C91D88DC585F5F863B91318729D /* Foundation.framework */; };
-		5F0938830014B16FE002FC2B399F91E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D59C91D88DC585F5F863B91318729D /* Foundation.framework */; };
-		67DA9DE1F04AA37F6B3447BA536BB012 /* WTUIColorExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C97CDA50053E9FFC6FC27035080511 /* WTUIColorExtensions-dummy.m */; };
-		74F9FBBC52BF352A1A86E8F6C541EF6A /* WTBoolExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4495CB233CABEFEE8F59C1A62C3B5462 /* WTBoolExtensions-dummy.m */; };
-		7E23A7246A6FBFBA2A39EC4645D0A5E2 /* WTCoreGraphicsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E51F20E4062EDF7F7325693925ACC /* WTCoreGraphicsExtensions.swift */; };
-		8420AB259FB9C8743F6AE7E6CAF0C005 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC7156EA514C43DFBB0718B50BB262F /* UIKit.framework */; };
-		97B23AEED6FE32FA2A0E690F0D9FBC70 /* WTBinaryFloatingPointExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222DD7F2598CA4C4E4F70DC79E9F93E /* WTBinaryFloatingPointExtensions.swift */; };
-		9A8850B761CD8BC8EACAE3999AC91C97 /* WTBinaryFloatingPointExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEECF74148886FDB6F14EB0736A46CA /* WTBinaryFloatingPointExtensions-dummy.m */; };
-		9DB0EEF78910BF339B28E2EBB60D7C78 /* WTBoolExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4742AA4BF130F43B15C1099393AC7F98 /* WTBoolExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9DBEB93063691D61C58ED6833DCB7415 /* WTUIColorExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9222DBAAE1C848E65616863D10DD4D5A /* WTUIColorExtensions.framework */; };
-		A86327D8BFE5CDBBA9804E773229067F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D59C91D88DC585F5F863B91318729D /* Foundation.framework */; };
-		AC492D980B1FFA3FE606794885B19ED1 /* WTCoreGraphicsExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B3A74718E661BA6307183FF87DC7F /* WTCoreGraphicsExtensions-dummy.m */; };
-		C1280F6AF0752F4D4518C7D585E2C0D9 /* WTBoolExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB35E9C4A5DE304992CD0C2048C298E /* WTBoolExtensions.swift */; };
-		CB68CC8DA0CF8BDA9D52B6AD5CAA5157 /* WTUIColorExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D4A4F179BB91491874F86714AC877D /* WTUIColorExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D14C12C8485DE835340D74426DA3AD8A /* Pods-WTCoreGraphicsExtensions_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 705B8ADDC24B5AF0FFF979BDCA476FE8 /* Pods-WTCoreGraphicsExtensions_Tests-dummy.m */; };
-		D1E59E926CD90B0067266D1AAE56AF58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D59C91D88DC585F5F863B91318729D /* Foundation.framework */; };
-		DD1374EA9230F1C1405F39901546FE56 /* WTBinaryFloatingPointExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E53B94E19532E33583B9131646C2478 /* WTBinaryFloatingPointExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E3886116D16730BB15A8F5A15DA35D77 /* WTCoreGraphicsExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 357C443E228A2CFBB588E65A8C938076 /* WTCoreGraphicsExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CD9B5C8EEDDF704CCF5E64245890EAC /* WTBinaryFloatingPointExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E5C51827D07A95B729F6AB172314DD /* WTBinaryFloatingPointExtensions-dummy.m */; };
+		0E70E3630C9EE1A2920AC85E379134AD /* WTUIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D4862515B97CD3E40A5428605DEAC /* WTUIColorExtensions.swift */; };
+		46C658DAD8AC73217E9870BCBD4847B1 /* WTBinaryFloatingPointExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B3B19FEC83D134081B25743D045852 /* WTBinaryFloatingPointExtensions.framework */; };
+		4D7E39A6B6EFFC72118F9CCFC3BD7E59 /* WTUIColorExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47035828697900264D96BF7FD2386871 /* WTUIColorExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537B5CC3C85ADA87383B415078866FC7 /* Pods-WTCoreGraphicsExtensions_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFDB67DB1D5EC9EFA7E8377FC6331961 /* Pods-WTCoreGraphicsExtensions_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62C15C18CD03B52E7FA57594DC2E8580 /* Pods-WTCoreGraphicsExtensions_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 705B8ADDC24B5AF0FFF979BDCA476FE8 /* Pods-WTCoreGraphicsExtensions_Tests-dummy.m */; };
+		666429A2D58915A8F656022D6A1B209F /* WTUIColorExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CF100500B57BC8FAE4631D375CC93C /* WTUIColorExtensions-dummy.m */; };
+		68BD1C7805660B2FF3DCDB0C7C3F6E16 /* WTCoreGraphicsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E51F20E4062EDF7F7325693925ACC /* WTCoreGraphicsExtensions.swift */; };
+		78E421543CA649DCD913A40E8A12BE26 /* WTBinaryFloatingPointExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D7E299BF8730173B2192EF482198D172 /* WTBinaryFloatingPointExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79DDBAA4367E417CBCD6651CF6C672B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC7156EA514C43DFBB0718B50BB262F /* UIKit.framework */; };
+		966F0CE2994C2658B632785C5CA5CCF3 /* WTUIColorExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9222DBAAE1C848E65616863D10DD4D5A /* WTUIColorExtensions.framework */; };
+		9A45D6C48DE7EFAB900E8636EAE72479 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D59C91D88DC585F5F863B91318729D /* Foundation.framework */; };
+		A1D5EF0DB3BB4660725B5DD6FC81587A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D59C91D88DC585F5F863B91318729D /* Foundation.framework */; };
+		A4AB898B918422ADCE3AB9DA5D2AF241 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D59C91D88DC585F5F863B91318729D /* Foundation.framework */; };
+		E058A56C091751FCC532447700FFFB49 /* WTCoreGraphicsExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B3A74718E661BA6307183FF87DC7F /* WTCoreGraphicsExtensions-dummy.m */; };
+		E7A2DEBD6F5F5C3506531C7398CE3B60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D59C91D88DC585F5F863B91318729D /* Foundation.framework */; };
+		F4583EE0EA4CEF4293D1F840FCE74323 /* WTBinaryFloatingPointExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A97EA21493B167B18D0BA7375EEE5CC /* WTBinaryFloatingPointExtensions.swift */; };
+		FCB3A0926A172594D7F46761FCA353C2 /* WTCoreGraphicsExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 357C443E228A2CFBB588E65A8C938076 /* WTCoreGraphicsExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0E31D8DE6B25ECD66095B6E21A244FFD /* PBXContainerItemProxy */ = {
+		683C64600BEBA4547D9D323633560A86 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 05F091DAC41E244D0DB7C11BE4B9B94B;
+			remoteGlobalIDString = 5B59F2C03E68F168A3D5C89CEEBC0F08;
 			remoteInfo = WTUIColorExtensions;
 		};
-		155DE37E577834F13A365106201D0A44 /* PBXContainerItemProxy */ = {
+		7B0157B769E9400C8D4426F4B16CB340 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C78D940E94EDA61AB00E3975EEE89B5C;
-			remoteInfo = WTBoolExtensions;
-		};
-		50355E0E4F2C4B0A5FA6A5A91D96349A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4E919D3B1F62FC00F14AE66B4F75A757;
+			remoteGlobalIDString = 263D021775827EE132FA84D529412F75;
 			remoteInfo = WTBinaryFloatingPointExtensions;
 		};
-		62C3D81DA39B6D09CEAD4D99B5983931 /* PBXContainerItemProxy */ = {
+		C1BCA9928B67A745AC7739219CDCCB9E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 05F091DAC41E244D0DB7C11BE4B9B94B;
+			remoteGlobalIDString = 263D021775827EE132FA84D529412F75;
+			remoteInfo = WTBinaryFloatingPointExtensions;
+		};
+		CE85947DDB8419E3E57A71AC24F9B9CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B59F2C03E68F168A3D5C89CEEBC0F08;
 			remoteInfo = WTUIColorExtensions;
 		};
-		8711BFE5624EF546FA07B7442240EF04 /* PBXContainerItemProxy */ = {
+		DE6C975BF9D36A34E65013331D4D0E87 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4E919D3B1F62FC00F14AE66B4F75A757;
-			remoteInfo = WTBinaryFloatingPointExtensions;
-		};
-		CDD7B65B9C97ACB072AB116066380086 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9F641E92C6A3A669D4D8424072658B9E;
+			remoteGlobalIDString = 53CCF859C39AB309D99951D0627EB24A;
 			remoteInfo = WTCoreGraphicsExtensions;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0660A7354D4E723F23D6CB1277E825EA /* WTBinaryFloatingPointExtensions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTBinaryFloatingPointExtensions-prefix.pch"; sourceTree = "<group>"; };
+		039B9B8B652BFB4360F84A0ECA8B4BCE /* WTUIColorExtensions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = WTUIColorExtensions.modulemap; sourceTree = "<group>"; };
 		068528FE0BFC97384F2496B8235FC9C0 /* WTCoreGraphicsExtensions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = WTCoreGraphicsExtensions.modulemap; sourceTree = "<group>"; };
-		06E633A7CDCBF21F7945D93C8EB6835B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A35A6336F475DD6B471B60939543CE2 /* WTBoolExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WTBoolExtensions.framework; path = WTBoolExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EB35E9C4A5DE304992CD0C2048C298E /* WTBoolExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WTBoolExtensions.swift; path = WTBoolExtensions/Classes/WTBoolExtensions.swift; sourceTree = "<group>"; };
+		0C8B95C6E6F3F5E65758D934969C0A71 /* WTUIColorExtensions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WTUIColorExtensions.xcconfig; sourceTree = "<group>"; };
+		1A97EA21493B167B18D0BA7375EEE5CC /* WTBinaryFloatingPointExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WTBinaryFloatingPointExtensions.swift; path = WTBinaryFloatingPointExtensions/Classes/WTBinaryFloatingPointExtensions.swift; sourceTree = "<group>"; };
 		2396EC8D21B1E2F9B4D5ECAFC9B50A18 /* Pods-WTCoreGraphicsExtensions_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WTCoreGraphicsExtensions_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		23ED5878BBB7F5D64630AC7FF0F5E675 /* WTBoolExtensions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTBoolExtensions-prefix.pch"; sourceTree = "<group>"; };
-		23FA33564E77C4D0B1DDD329607D0763 /* Pods_WTCoreGraphicsExtensions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WTCoreGraphicsExtensions_Tests.framework; path = "Pods-WTCoreGraphicsExtensions_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CB7E11528D622257E8643E4A2A74890 /* WTBoolExtensions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WTBoolExtensions.xcconfig; sourceTree = "<group>"; };
-		30BDD4DE460261B1151BCF333D373DD1 /* WTBoolExtensions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = WTBoolExtensions.modulemap; sourceTree = "<group>"; };
+		2AA53F20E0511D823E0009C319A3CC75 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		357C443E228A2CFBB588E65A8C938076 /* WTCoreGraphicsExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTCoreGraphicsExtensions-umbrella.h"; sourceTree = "<group>"; };
 		440E51F20E4062EDF7F7325693925ACC /* WTCoreGraphicsExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WTCoreGraphicsExtensions.swift; sourceTree = "<group>"; };
-		4495CB233CABEFEE8F59C1A62C3B5462 /* WTBoolExtensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WTBoolExtensions-dummy.m"; sourceTree = "<group>"; };
-		44D00BC206640B575978A9AAFF10D7A4 /* WTBinaryFloatingPointExtensions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = WTBinaryFloatingPointExtensions.modulemap; sourceTree = "<group>"; };
-		451EFEEF5B4DD577AEF3B8FDD6C43D39 /* WTBinaryFloatingPointExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WTBinaryFloatingPointExtensions.framework; path = WTBinaryFloatingPointExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46592B418F247588E6BD3C57223B3825 /* Pods-WTCoreGraphicsExtensions_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WTCoreGraphicsExtensions_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		4742AA4BF130F43B15C1099393AC7F98 /* WTBoolExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTBoolExtensions-umbrella.h"; sourceTree = "<group>"; };
-		47E9A55BC2FA003C901A91556D2F15DE /* WTUIColorExtensions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTUIColorExtensions-prefix.pch"; sourceTree = "<group>"; };
-		4E53B94E19532E33583B9131646C2478 /* WTBinaryFloatingPointExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTBinaryFloatingPointExtensions-umbrella.h"; sourceTree = "<group>"; };
+		47035828697900264D96BF7FD2386871 /* WTUIColorExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTUIColorExtensions-umbrella.h"; sourceTree = "<group>"; };
+		47522E4300618E98BD2A475966C9EDB7 /* WTBinaryFloatingPointExtensions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WTBinaryFloatingPointExtensions.xcconfig; sourceTree = "<group>"; };
+		4B7220E11C885D3DF9CE8506B9065304 /* WTCoreGraphicsExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WTCoreGraphicsExtensions.framework; path = WTCoreGraphicsExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52B3B19FEC83D134081B25743D045852 /* WTBinaryFloatingPointExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WTBinaryFloatingPointExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		55D4A4F179BB91491874F86714AC877D /* WTUIColorExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTUIColorExtensions-umbrella.h"; sourceTree = "<group>"; };
-		579F990AB5E532528BAECEEF3CBECB01 /* WTUIColorExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WTUIColorExtensions.framework; path = WTUIColorExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6092824388A019814133348FA71781BD /* WTCoreGraphicsExtensions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTCoreGraphicsExtensions-prefix.pch"; sourceTree = "<group>"; };
+		61E5C51827D07A95B729F6AB172314DD /* WTBinaryFloatingPointExtensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WTBinaryFloatingPointExtensions-dummy.m"; sourceTree = "<group>"; };
 		622476D29119786CBD9B13062C6F0E66 /* Pods-WTCoreGraphicsExtensions_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WTCoreGraphicsExtensions_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		64CF100500B57BC8FAE4631D375CC93C /* WTUIColorExtensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WTUIColorExtensions-dummy.m"; sourceTree = "<group>"; };
+		653F45CE5FD1F741A2970E411DBC4614 /* WTBinaryFloatingPointExtensions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = WTBinaryFloatingPointExtensions.modulemap; sourceTree = "<group>"; };
 		6CBD158FBD0B70B644E7EECA4A1BCA36 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		705B8ADDC24B5AF0FFF979BDCA476FE8 /* Pods-WTCoreGraphicsExtensions_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WTCoreGraphicsExtensions_Tests-dummy.m"; sourceTree = "<group>"; };
-		761A80A0E629CD0408C636E144AF478B /* WTUIColorExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WTUIColorExtensions.swift; path = WTUIColorExtensions/Classes/WTUIColorExtensions.swift; sourceTree = "<group>"; };
-		8548589CD7F70131901CEDAC3099F3FE /* WTBinaryFloatingPointExtensions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WTBinaryFloatingPointExtensions.xcconfig; sourceTree = "<group>"; };
-		8881C83F8417A3259FCA48CC329ECD52 /* WTUIColorExtensions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WTUIColorExtensions.xcconfig; sourceTree = "<group>"; };
+		8568111908D40133093194119427A447 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9222DBAAE1C848E65616863D10DD4D5A /* WTUIColorExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WTUIColorExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93DADE1FB93A42E0F00761624722D34D /* WTUIColorExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WTUIColorExtensions.framework; path = WTUIColorExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F7376C1120781679169302E879276B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		965D238F6BBD2777F7125825653FED07 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96C97CDA50053E9FFC6FC27035080511 /* WTUIColorExtensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WTUIColorExtensions-dummy.m"; sourceTree = "<group>"; };
-		A0F75AB10150AF1CFC56A391AC61807A /* WTUIColorExtensions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = WTUIColorExtensions.modulemap; sourceTree = "<group>"; };
+		AA5D4862515B97CD3E40A5428605DEAC /* WTUIColorExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WTUIColorExtensions.swift; path = WTUIColorExtensions/Classes/WTUIColorExtensions.swift; sourceTree = "<group>"; };
 		AFA2902C24C240FCBD7278722DB88551 /* Pods-WTCoreGraphicsExtensions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WTCoreGraphicsExtensions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BBEECF74148886FDB6F14EB0736A46CA /* WTBinaryFloatingPointExtensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WTBinaryFloatingPointExtensions-dummy.m"; sourceTree = "<group>"; };
-		BC2BAE2E467F75D73896A42BCC296900 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B437911806C4E0BB845B55B35945A375 /* WTUIColorExtensions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTUIColorExtensions-prefix.pch"; sourceTree = "<group>"; };
+		C1F21F4DEA64B95898A2AA3972E9F65D /* WTBinaryFloatingPointExtensions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTBinaryFloatingPointExtensions-prefix.pch"; sourceTree = "<group>"; };
 		C7D59C91D88DC585F5F863B91318729D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CFC7156EA514C43DFBB0718B50BB262F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		CFDB67DB1D5EC9EFA7E8377FC6331961 /* Pods-WTCoreGraphicsExtensions_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WTCoreGraphicsExtensions_Tests-umbrella.h"; sourceTree = "<group>"; };
 		D007EAD9706840CE2DBDCFC79C0F1F66 /* Pods-WTCoreGraphicsExtensions_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WTCoreGraphicsExtensions_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D320B39FC4CD1D5783A40C321DB54F41 /* Pods-WTCoreGraphicsExtensions_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WTCoreGraphicsExtensions_Tests-resources.sh"; sourceTree = "<group>"; };
+		D6BA3023DD5B873754A601E8ED95B5C5 /* Pods_WTCoreGraphicsExtensions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WTCoreGraphicsExtensions_Tests.framework; path = "Pods-WTCoreGraphicsExtensions_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E299BF8730173B2192EF482198D172 /* WTBinaryFloatingPointExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTBinaryFloatingPointExtensions-umbrella.h"; sourceTree = "<group>"; };
 		DA574A3E16032A73E5B5578F6D62E87B /* WTCoreGraphicsExtensions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WTCoreGraphicsExtensions.xcconfig; sourceTree = "<group>"; };
 		DF478768D4178F4649603D00B66BA978 /* Pods-WTCoreGraphicsExtensions_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WTCoreGraphicsExtensions_Tests.modulemap"; sourceTree = "<group>"; };
-		E222DD7F2598CA4C4E4F70DC79E9F93E /* WTBinaryFloatingPointExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WTBinaryFloatingPointExtensions.swift; path = WTBinaryFloatingPointExtensions/Classes/WTBinaryFloatingPointExtensions.swift; sourceTree = "<group>"; };
-		F14C137937429FA606433027A72106BD /* WTCoreGraphicsExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WTCoreGraphicsExtensions.framework; path = WTCoreGraphicsExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E44E4DB93EECE16C9CB16F0C0690FCE3 /* WTBinaryFloatingPointExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WTBinaryFloatingPointExtensions.framework; path = WTBinaryFloatingPointExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66B3A74718E661BA6307183FF87DC7F /* WTCoreGraphicsExtensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WTCoreGraphicsExtensions-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		32A984B6B0FDF8638CC5BFD4D7EB1C76 /* Frameworks */ = {
+		3390D31E25101483288B320E39A8D5DE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1E59E926CD90B0067266D1AAE56AF58 /* Foundation.framework in Frameworks */,
+				A1D5EF0DB3BB4660725B5DD6FC81587A /* Foundation.framework in Frameworks */,
+				79DDBAA4367E417CBCD6651CF6C672B1 /* UIKit.framework in Frameworks */,
+				46C658DAD8AC73217E9870BCBD4847B1 /* WTBinaryFloatingPointExtensions.framework in Frameworks */,
+				966F0CE2994C2658B632785C5CA5CCF3 /* WTUIColorExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4CB819F6282A125E735A8A071067A70A /* Frameworks */ = {
+		891C07214830ACDD813C03411718B6E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A86327D8BFE5CDBBA9804E773229067F /* Foundation.framework in Frameworks */,
-				8420AB259FB9C8743F6AE7E6CAF0C005 /* UIKit.framework in Frameworks */,
-				18821D53C103BA0066BF59619998D2E9 /* WTBinaryFloatingPointExtensions.framework in Frameworks */,
-				9DBEB93063691D61C58ED6833DCB7415 /* WTUIColorExtensions.framework in Frameworks */,
+				E7A2DEBD6F5F5C3506531C7398CE3B60 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6241EB137C23F76FD1D6B69A57B5D955 /* Frameworks */ = {
+		9C0330DD8230AA25B977C99B1A7680BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E4D0A209935C1D7B06AFFDCD889CCC1 /* Foundation.framework in Frameworks */,
+				A4AB898B918422ADCE3AB9DA5D2AF241 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A6D48CB88BD86D82F422509610F029FF /* Frameworks */ = {
+		A641CF8E68FEA303A84593AF33857AE4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F0938830014B16FE002FC2B399F91E5 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CF1F46126F11A0F3148158514340B0C4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2D5DD5005F92E85A0AFFB9447B40CB04 /* Foundation.framework in Frameworks */,
+				9A45D6C48DE7EFAB900E8636EAE72479 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05FE3D109C386AA5CC1C9E7E3A761D09 /* Products */ = {
+		1C0F9A3E8AD2E3EEAA15E8016979E6BC /* WTBinaryFloatingPointExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				23FA33564E77C4D0B1DDD329607D0763 /* Pods_WTCoreGraphicsExtensions_Tests.framework */,
-				451EFEEF5B4DD577AEF3B8FDD6C43D39 /* WTBinaryFloatingPointExtensions.framework */,
-				0A35A6336F475DD6B471B60939543CE2 /* WTBoolExtensions.framework */,
-				F14C137937429FA606433027A72106BD /* WTCoreGraphicsExtensions.framework */,
-				579F990AB5E532528BAECEEF3CBECB01 /* WTUIColorExtensions.framework */,
+				1A97EA21493B167B18D0BA7375EEE5CC /* WTBinaryFloatingPointExtensions.swift */,
+				45C86E659C2F3C00DF2F65B81F6FC7F1 /* Support Files */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		0B1DD6441BDC506F435679490D954487 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A7E19784CF2963AF6523CA6E2826FB01 /* WTBinaryFloatingPointExtensions */,
-				35019EDB8D9412DDBA90968EB49E8E36 /* WTBoolExtensions */,
-				9EAF9C28AD5CE66181B227409A2DB966 /* WTUIColorExtensions */,
-			);
-			name = Pods;
+			name = WTBinaryFloatingPointExtensions;
+			path = WTBinaryFloatingPointExtensions;
 			sourceTree = "<group>";
 		};
 		205ED205866060A37AC4676FD9591270 /* Classes */ = {
@@ -203,16 +164,6 @@
 			);
 			name = Classes;
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		35019EDB8D9412DDBA90968EB49E8E36 /* WTBoolExtensions */ = {
-			isa = PBXGroup;
-			children = (
-				1EB35E9C4A5DE304992CD0C2048C298E /* WTBoolExtensions.swift */,
-				DE1E42CC4E0D3B9DD6CA1103DA19C4FA /* Support Files */,
-			);
-			name = WTBoolExtensions;
-			path = WTBoolExtensions;
 			sourceTree = "<group>";
 		};
 		377C82B8997A5F1B7306C4A15C1ECFDF /* Support Files */ = {
@@ -229,6 +180,15 @@
 			path = "Example/Pods/Target Support Files/WTCoreGraphicsExtensions";
 			sourceTree = "<group>";
 		};
+		3A146BCD112BD87F78E0E3F1797C23B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C0F9A3E8AD2E3EEAA15E8016979E6BC /* WTBinaryFloatingPointExtensions */,
+				9DBFF53D5C28D022EE26BFCF2AA8E590 /* WTUIColorExtensions */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4303F73D53F14D5910F3EB5EB68EEFC2 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +196,20 @@
 				CFC7156EA514C43DFBB0718B50BB262F /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		45C86E659C2F3C00DF2F65B81F6FC7F1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2AA53F20E0511D823E0009C319A3CC75 /* Info.plist */,
+				653F45CE5FD1F741A2970E411DBC4614 /* WTBinaryFloatingPointExtensions.modulemap */,
+				47522E4300618E98BD2A475966C9EDB7 /* WTBinaryFloatingPointExtensions.xcconfig */,
+				61E5C51827D07A95B729F6AB172314DD /* WTBinaryFloatingPointExtensions-dummy.m */,
+				C1F21F4DEA64B95898A2AA3972E9F65D /* WTBinaryFloatingPointExtensions-prefix.pch */,
+				D7E299BF8730173B2192EF482198D172 /* WTBinaryFloatingPointExtensions-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WTBinaryFloatingPointExtensions";
 			sourceTree = "<group>";
 		};
 		7650E97377779A58D1E0FFC8E020A8B4 /* Development Pods */ = {
@@ -246,28 +220,14 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		7732B82C997F2AFC77573AED556D8384 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				06E633A7CDCBF21F7945D93C8EB6835B /* Info.plist */,
-				A0F75AB10150AF1CFC56A391AC61807A /* WTUIColorExtensions.modulemap */,
-				8881C83F8417A3259FCA48CC329ECD52 /* WTUIColorExtensions.xcconfig */,
-				96C97CDA50053E9FFC6FC27035080511 /* WTUIColorExtensions-dummy.m */,
-				47E9A55BC2FA003C901A91556D2F15DE /* WTUIColorExtensions-prefix.pch */,
-				55D4A4F179BB91491874F86714AC877D /* WTUIColorExtensions-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/WTUIColorExtensions";
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				7650E97377779A58D1E0FFC8E020A8B4 /* Development Pods */,
 				FCCFB14B4F5728E59CC10461076393CC /* Frameworks */,
-				0B1DD6441BDC506F435679490D954487 /* Pods */,
-				05FE3D109C386AA5CC1C9E7E3A761D09 /* Products */,
+				3A146BCD112BD87F78E0E3F1797C23B9 /* Pods */,
+				93885C46F01BBBC282FF3568A8F4264C /* Products */,
 				D84692F774FC3E2AD0FA6C648A8B84B3 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -281,24 +241,25 @@
 			path = WTCoreGraphicsExtensions;
 			sourceTree = "<group>";
 		};
-		9EAF9C28AD5CE66181B227409A2DB966 /* WTUIColorExtensions */ = {
+		93885C46F01BBBC282FF3568A8F4264C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				761A80A0E629CD0408C636E144AF478B /* WTUIColorExtensions.swift */,
-				7732B82C997F2AFC77573AED556D8384 /* Support Files */,
+				D6BA3023DD5B873754A601E8ED95B5C5 /* Pods_WTCoreGraphicsExtensions_Tests.framework */,
+				E44E4DB93EECE16C9CB16F0C0690FCE3 /* WTBinaryFloatingPointExtensions.framework */,
+				4B7220E11C885D3DF9CE8506B9065304 /* WTCoreGraphicsExtensions.framework */,
+				93DADE1FB93A42E0F00761624722D34D /* WTUIColorExtensions.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DBFF53D5C28D022EE26BFCF2AA8E590 /* WTUIColorExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				AA5D4862515B97CD3E40A5428605DEAC /* WTUIColorExtensions.swift */,
+				E8C9DCAABCE92B95F77723F9C9D46A62 /* Support Files */,
 			);
 			name = WTUIColorExtensions;
 			path = WTUIColorExtensions;
-			sourceTree = "<group>";
-		};
-		A7E19784CF2963AF6523CA6E2826FB01 /* WTBinaryFloatingPointExtensions */ = {
-			isa = PBXGroup;
-			children = (
-				E222DD7F2598CA4C4E4F70DC79E9F93E /* WTBinaryFloatingPointExtensions.swift */,
-				E53767B4F25558FC757B754AF595C0A8 /* Support Files */,
-			);
-			name = WTBinaryFloatingPointExtensions;
-			path = WTBinaryFloatingPointExtensions;
 			sourceTree = "<group>";
 		};
 		D1574C08BD7679CE8F065EA6B925DEC5 /* WTCoreGraphicsExtensions */ = {
@@ -319,32 +280,18 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		DE1E42CC4E0D3B9DD6CA1103DA19C4FA /* Support Files */ = {
+		E8C9DCAABCE92B95F77723F9C9D46A62 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BC2BAE2E467F75D73896A42BCC296900 /* Info.plist */,
-				30BDD4DE460261B1151BCF333D373DD1 /* WTBoolExtensions.modulemap */,
-				2CB7E11528D622257E8643E4A2A74890 /* WTBoolExtensions.xcconfig */,
-				4495CB233CABEFEE8F59C1A62C3B5462 /* WTBoolExtensions-dummy.m */,
-				23ED5878BBB7F5D64630AC7FF0F5E675 /* WTBoolExtensions-prefix.pch */,
-				4742AA4BF130F43B15C1099393AC7F98 /* WTBoolExtensions-umbrella.h */,
+				8568111908D40133093194119427A447 /* Info.plist */,
+				039B9B8B652BFB4360F84A0ECA8B4BCE /* WTUIColorExtensions.modulemap */,
+				0C8B95C6E6F3F5E65758D934969C0A71 /* WTUIColorExtensions.xcconfig */,
+				64CF100500B57BC8FAE4631D375CC93C /* WTUIColorExtensions-dummy.m */,
+				B437911806C4E0BB845B55B35945A375 /* WTUIColorExtensions-prefix.pch */,
+				47035828697900264D96BF7FD2386871 /* WTUIColorExtensions-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/WTBoolExtensions";
-			sourceTree = "<group>";
-		};
-		E53767B4F25558FC757B754AF595C0A8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				965D238F6BBD2777F7125825653FED07 /* Info.plist */,
-				44D00BC206640B575978A9AAFF10D7A4 /* WTBinaryFloatingPointExtensions.modulemap */,
-				8548589CD7F70131901CEDAC3099F3FE /* WTBinaryFloatingPointExtensions.xcconfig */,
-				BBEECF74148886FDB6F14EB0736A46CA /* WTBinaryFloatingPointExtensions-dummy.m */,
-				0660A7354D4E723F23D6CB1277E825EA /* WTBinaryFloatingPointExtensions-prefix.pch */,
-				4E53B94E19532E33583B9131646C2478 /* WTBinaryFloatingPointExtensions-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/WTBinaryFloatingPointExtensions";
+			path = "../Target Support Files/WTUIColorExtensions";
 			sourceTree = "<group>";
 		};
 		FCCFB14B4F5728E59CC10461076393CC /* Frameworks */ = {
@@ -378,73 +325,48 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		02EB45AD8F444415FD96405E5C1B0C2C /* Headers */ = {
+		0E9B5F28BAD6ED37CFDB1CAA495326B1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD1374EA9230F1C1405F39901546FE56 /* WTBinaryFloatingPointExtensions-umbrella.h in Headers */,
+				78E421543CA649DCD913A40E8A12BE26 /* WTBinaryFloatingPointExtensions-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		34F826CA848F83C39A9F78E0DB5347F6 /* Headers */ = {
+		4C527E341C676F897726E449BA148EEC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41746DD3C66F60C81922584F4159BAEC /* Pods-WTCoreGraphicsExtensions_Tests-umbrella.h in Headers */,
+				FCB3A0926A172594D7F46761FCA353C2 /* WTCoreGraphicsExtensions-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3FD8557843A3B41DFAD1E773DEDC376A /* Headers */ = {
+		8546993799AD04D2CDEAB6E10383E879 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DB0EEF78910BF339B28E2EBB60D7C78 /* WTBoolExtensions-umbrella.h in Headers */,
+				537B5CC3C85ADA87383B415078866FC7 /* Pods-WTCoreGraphicsExtensions_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5391000B7DFBA8E01BA62899417F7CE /* Headers */ = {
+		9C64EA6421314E3ECFF343F1567F20F6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB68CC8DA0CF8BDA9D52B6AD5CAA5157 /* WTUIColorExtensions-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BDD20BB2555D7F2FF59DF4D37B927252 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E3886116D16730BB15A8F5A15DA35D77 /* WTCoreGraphicsExtensions-umbrella.h in Headers */,
+				4D7E39A6B6EFFC72118F9CCFC3BD7E59 /* WTUIColorExtensions-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		05F091DAC41E244D0DB7C11BE4B9B94B /* WTUIColorExtensions */ = {
+		263D021775827EE132FA84D529412F75 /* WTBinaryFloatingPointExtensions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC47521CC6C1381E2E68012C63EC9F46 /* Build configuration list for PBXNativeTarget "WTUIColorExtensions" */;
+			buildConfigurationList = 30272EA32D2987FF63E95BA8179DD7B7 /* Build configuration list for PBXNativeTarget "WTBinaryFloatingPointExtensions" */;
 			buildPhases = (
-				011BA7E1A242E457E752FEDB983A11FD /* Sources */,
-				6241EB137C23F76FD1D6B69A57B5D955 /* Frameworks */,
-				A5391000B7DFBA8E01BA62899417F7CE /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = WTUIColorExtensions;
-			productName = WTUIColorExtensions;
-			productReference = 579F990AB5E532528BAECEEF3CBECB01 /* WTUIColorExtensions.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		4E919D3B1F62FC00F14AE66B4F75A757 /* WTBinaryFloatingPointExtensions */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F25977E6BB8C0D770F1B707215FB24BE /* Build configuration list for PBXNativeTarget "WTBinaryFloatingPointExtensions" */;
-			buildPhases = (
-				6C91D95C24C8312BB4AE0D8DE829B863 /* Sources */,
-				A6D48CB88BD86D82F422509610F029FF /* Frameworks */,
-				02EB45AD8F444415FD96405E5C1B0C2C /* Headers */,
+				8DBBBB718B607A57DFE4D68D8CA3C4D3 /* Sources */,
+				891C07214830ACDD813C03411718B6E2 /* Frameworks */,
+				0E9B5F28BAD6ED37CFDB1CAA495326B1 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -452,64 +374,63 @@
 			);
 			name = WTBinaryFloatingPointExtensions;
 			productName = WTBinaryFloatingPointExtensions;
-			productReference = 451EFEEF5B4DD577AEF3B8FDD6C43D39 /* WTBinaryFloatingPointExtensions.framework */;
+			productReference = E44E4DB93EECE16C9CB16F0C0690FCE3 /* WTBinaryFloatingPointExtensions.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9F641E92C6A3A669D4D8424072658B9E /* WTCoreGraphicsExtensions */ = {
+		4788D5AF1AF54C779A9EBAEEC435F487 /* Pods-WTCoreGraphicsExtensions_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B585D727CAF0CA9F9883B1FC7149E240 /* Build configuration list for PBXNativeTarget "WTCoreGraphicsExtensions" */;
+			buildConfigurationList = 543A155CA2AFBCD048EC0EA1B62A2F50 /* Build configuration list for PBXNativeTarget "Pods-WTCoreGraphicsExtensions_Tests" */;
 			buildPhases = (
-				B89F353C4E8BA0AFB6C59DDDAA6EDD86 /* Sources */,
-				4CB819F6282A125E735A8A071067A70A /* Frameworks */,
-				BDD20BB2555D7F2FF59DF4D37B927252 /* Headers */,
+				DF95BBE1E81E4D768A7951781F95F54C /* Sources */,
+				9C0330DD8230AA25B977C99B1A7680BE /* Frameworks */,
+				8546993799AD04D2CDEAB6E10383E879 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EA94C2DA445A047215EF1769E9B22780 /* PBXTargetDependency */,
-				05B76E9A2ACCC3568E3899111143010A /* PBXTargetDependency */,
-			);
-			name = WTCoreGraphicsExtensions;
-			productName = WTCoreGraphicsExtensions;
-			productReference = F14C137937429FA606433027A72106BD /* WTCoreGraphicsExtensions.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		9FE78948B657511746105BD029E76E00 /* Pods-WTCoreGraphicsExtensions_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D568D05016582ECDD40BBC7DEB7147F9 /* Build configuration list for PBXNativeTarget "Pods-WTCoreGraphicsExtensions_Tests" */;
-			buildPhases = (
-				CA35A935C23659745990AB7D9111B0EA /* Sources */,
-				32A984B6B0FDF8638CC5BFD4D7EB1C76 /* Frameworks */,
-				34F826CA848F83C39A9F78E0DB5347F6 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B712C02DB77198CC245955F274DE4D8C /* PBXTargetDependency */,
-				CE5699149605AFD7A171B918E1EFFA66 /* PBXTargetDependency */,
-				FC14E2EB2F964B532D762A6F09AE581A /* PBXTargetDependency */,
-				6CCA289DEB1AA0236AE219E00E6DF613 /* PBXTargetDependency */,
+				48E078A8FF1774203AD9780B7F0CE428 /* PBXTargetDependency */,
+				08F757B8D3003341045F586E0FBB7BEE /* PBXTargetDependency */,
+				5518572C6511574C3FD636B6EE538480 /* PBXTargetDependency */,
 			);
 			name = "Pods-WTCoreGraphicsExtensions_Tests";
 			productName = "Pods-WTCoreGraphicsExtensions_Tests";
-			productReference = 23FA33564E77C4D0B1DDD329607D0763 /* Pods_WTCoreGraphicsExtensions_Tests.framework */;
+			productReference = D6BA3023DD5B873754A601E8ED95B5C5 /* Pods_WTCoreGraphicsExtensions_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C78D940E94EDA61AB00E3975EEE89B5C /* WTBoolExtensions */ = {
+		53CCF859C39AB309D99951D0627EB24A /* WTCoreGraphicsExtensions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 25A0224577EEC3A9621E4F6C27E3E109 /* Build configuration list for PBXNativeTarget "WTBoolExtensions" */;
+			buildConfigurationList = A2B0C816EBFDA6BC99085FF5B710C205 /* Build configuration list for PBXNativeTarget "WTCoreGraphicsExtensions" */;
 			buildPhases = (
-				ECE08DF746E75D7028F876A1375147AF /* Sources */,
-				CF1F46126F11A0F3148158514340B0C4 /* Frameworks */,
-				3FD8557843A3B41DFAD1E773DEDC376A /* Headers */,
+				869F81988EA57E1F32F7B74756791761 /* Sources */,
+				3390D31E25101483288B320E39A8D5DE /* Frameworks */,
+				4C527E341C676F897726E449BA148EEC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DDCCA1430A26C9B53C95CA301B0E233 /* PBXTargetDependency */,
+				F18BF932C6E2F6D02806F87C30FF95A8 /* PBXTargetDependency */,
+			);
+			name = WTCoreGraphicsExtensions;
+			productName = WTCoreGraphicsExtensions;
+			productReference = 4B7220E11C885D3DF9CE8506B9065304 /* WTCoreGraphicsExtensions.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5B59F2C03E68F168A3D5C89CEEBC0F08 /* WTUIColorExtensions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D662ED9304C254B307429F47D9AA689B /* Build configuration list for PBXNativeTarget "WTUIColorExtensions" */;
+			buildPhases = (
+				3E816460465A2E8DF969BBF44D7B190B /* Sources */,
+				A641CF8E68FEA303A84593AF33857AE4 /* Frameworks */,
+				9C64EA6421314E3ECFF343F1567F20F6 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = WTBoolExtensions;
-			productName = WTBoolExtensions;
-			productReference = 0A35A6336F475DD6B471B60939543CE2 /* WTBoolExtensions.framework */;
+			name = WTUIColorExtensions;
+			productName = WTUIColorExtensions;
+			productReference = 93DADE1FB93A42E0F00761624722D34D /* WTUIColorExtensions.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -529,204 +450,91 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 05FE3D109C386AA5CC1C9E7E3A761D09 /* Products */;
+			productRefGroup = 93885C46F01BBBC282FF3568A8F4264C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9FE78948B657511746105BD029E76E00 /* Pods-WTCoreGraphicsExtensions_Tests */,
-				4E919D3B1F62FC00F14AE66B4F75A757 /* WTBinaryFloatingPointExtensions */,
-				C78D940E94EDA61AB00E3975EEE89B5C /* WTBoolExtensions */,
-				9F641E92C6A3A669D4D8424072658B9E /* WTCoreGraphicsExtensions */,
-				05F091DAC41E244D0DB7C11BE4B9B94B /* WTUIColorExtensions */,
+				4788D5AF1AF54C779A9EBAEEC435F487 /* Pods-WTCoreGraphicsExtensions_Tests */,
+				263D021775827EE132FA84D529412F75 /* WTBinaryFloatingPointExtensions */,
+				53CCF859C39AB309D99951D0627EB24A /* WTCoreGraphicsExtensions */,
+				5B59F2C03E68F168A3D5C89CEEBC0F08 /* WTUIColorExtensions */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		011BA7E1A242E457E752FEDB983A11FD /* Sources */ = {
+		3E816460465A2E8DF969BBF44D7B190B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67DA9DE1F04AA37F6B3447BA536BB012 /* WTUIColorExtensions-dummy.m in Sources */,
-				5A8188930EF9389B0ECA40FB3A69D312 /* WTUIColorExtensions.swift in Sources */,
+				666429A2D58915A8F656022D6A1B209F /* WTUIColorExtensions-dummy.m in Sources */,
+				0E70E3630C9EE1A2920AC85E379134AD /* WTUIColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6C91D95C24C8312BB4AE0D8DE829B863 /* Sources */ = {
+		869F81988EA57E1F32F7B74756791761 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A8850B761CD8BC8EACAE3999AC91C97 /* WTBinaryFloatingPointExtensions-dummy.m in Sources */,
-				97B23AEED6FE32FA2A0E690F0D9FBC70 /* WTBinaryFloatingPointExtensions.swift in Sources */,
+				E058A56C091751FCC532447700FFFB49 /* WTCoreGraphicsExtensions-dummy.m in Sources */,
+				68BD1C7805660B2FF3DCDB0C7C3F6E16 /* WTCoreGraphicsExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B89F353C4E8BA0AFB6C59DDDAA6EDD86 /* Sources */ = {
+		8DBBBB718B607A57DFE4D68D8CA3C4D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC492D980B1FFA3FE606794885B19ED1 /* WTCoreGraphicsExtensions-dummy.m in Sources */,
-				7E23A7246A6FBFBA2A39EC4645D0A5E2 /* WTCoreGraphicsExtensions.swift in Sources */,
+				0CD9B5C8EEDDF704CCF5E64245890EAC /* WTBinaryFloatingPointExtensions-dummy.m in Sources */,
+				F4583EE0EA4CEF4293D1F840FCE74323 /* WTBinaryFloatingPointExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA35A935C23659745990AB7D9111B0EA /* Sources */ = {
+		DF95BBE1E81E4D768A7951781F95F54C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D14C12C8485DE835340D74426DA3AD8A /* Pods-WTCoreGraphicsExtensions_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ECE08DF746E75D7028F876A1375147AF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				74F9FBBC52BF352A1A86E8F6C541EF6A /* WTBoolExtensions-dummy.m in Sources */,
-				C1280F6AF0752F4D4518C7D585E2C0D9 /* WTBoolExtensions.swift in Sources */,
+				62C15C18CD03B52E7FA57594DC2E8580 /* Pods-WTCoreGraphicsExtensions_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		05B76E9A2ACCC3568E3899111143010A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WTUIColorExtensions;
-			target = 05F091DAC41E244D0DB7C11BE4B9B94B /* WTUIColorExtensions */;
-			targetProxy = 0E31D8DE6B25ECD66095B6E21A244FFD /* PBXContainerItemProxy */;
-		};
-		6CCA289DEB1AA0236AE219E00E6DF613 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WTUIColorExtensions;
-			target = 05F091DAC41E244D0DB7C11BE4B9B94B /* WTUIColorExtensions */;
-			targetProxy = 62C3D81DA39B6D09CEAD4D99B5983931 /* PBXContainerItemProxy */;
-		};
-		B712C02DB77198CC245955F274DE4D8C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WTBinaryFloatingPointExtensions;
-			target = 4E919D3B1F62FC00F14AE66B4F75A757 /* WTBinaryFloatingPointExtensions */;
-			targetProxy = 50355E0E4F2C4B0A5FA6A5A91D96349A /* PBXContainerItemProxy */;
-		};
-		CE5699149605AFD7A171B918E1EFFA66 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WTBoolExtensions;
-			target = C78D940E94EDA61AB00E3975EEE89B5C /* WTBoolExtensions */;
-			targetProxy = 155DE37E577834F13A365106201D0A44 /* PBXContainerItemProxy */;
-		};
-		EA94C2DA445A047215EF1769E9B22780 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WTBinaryFloatingPointExtensions;
-			target = 4E919D3B1F62FC00F14AE66B4F75A757 /* WTBinaryFloatingPointExtensions */;
-			targetProxy = 8711BFE5624EF546FA07B7442240EF04 /* PBXContainerItemProxy */;
-		};
-		FC14E2EB2F964B532D762A6F09AE581A /* PBXTargetDependency */ = {
+		08F757B8D3003341045F586E0FBB7BEE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WTCoreGraphicsExtensions;
-			target = 9F641E92C6A3A669D4D8424072658B9E /* WTCoreGraphicsExtensions */;
-			targetProxy = CDD7B65B9C97ACB072AB116066380086 /* PBXContainerItemProxy */;
+			target = 53CCF859C39AB309D99951D0627EB24A /* WTCoreGraphicsExtensions */;
+			targetProxy = DE6C975BF9D36A34E65013331D4D0E87 /* PBXContainerItemProxy */;
+		};
+		3DDCCA1430A26C9B53C95CA301B0E233 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WTBinaryFloatingPointExtensions;
+			target = 263D021775827EE132FA84D529412F75 /* WTBinaryFloatingPointExtensions */;
+			targetProxy = C1BCA9928B67A745AC7739219CDCCB9E /* PBXContainerItemProxy */;
+		};
+		48E078A8FF1774203AD9780B7F0CE428 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WTBinaryFloatingPointExtensions;
+			target = 263D021775827EE132FA84D529412F75 /* WTBinaryFloatingPointExtensions */;
+			targetProxy = 7B0157B769E9400C8D4426F4B16CB340 /* PBXContainerItemProxy */;
+		};
+		5518572C6511574C3FD636B6EE538480 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WTUIColorExtensions;
+			target = 5B59F2C03E68F168A3D5C89CEEBC0F08 /* WTUIColorExtensions */;
+			targetProxy = 683C64600BEBA4547D9D323633560A86 /* PBXContainerItemProxy */;
+		};
+		F18BF932C6E2F6D02806F87C30FF95A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WTUIColorExtensions;
+			target = 5B59F2C03E68F168A3D5C89CEEBC0F08 /* WTUIColorExtensions */;
+			targetProxy = CE85947DDB8419E3E57A71AC24F9B9CE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0A742AED476AEC621B911A699A124A95 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8548589CD7F70131901CEDAC3099F3FE /* WTBinaryFloatingPointExtensions.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/WTBinaryFloatingPointExtensions/WTBinaryFloatingPointExtensions-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WTBinaryFloatingPointExtensions/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WTBinaryFloatingPointExtensions/WTBinaryFloatingPointExtensions.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = WTBinaryFloatingPointExtensions;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5AB6060EA8FDE10EF8BCDE39A49B168B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8881C83F8417A3259FCA48CC329ECD52 /* WTUIColorExtensions.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/WTUIColorExtensions/WTUIColorExtensions-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WTUIColorExtensions/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WTUIColorExtensions/WTUIColorExtensions.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = WTUIColorExtensions;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6974D667C11A92E44EA170DA8721FF43 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CB7E11528D622257E8643E4A2A74890 /* WTBoolExtensions.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/WTBoolExtensions/WTBoolExtensions-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WTBoolExtensions/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WTBoolExtensions/WTBoolExtensions.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = WTBoolExtensions;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6FEF936A7A5A392139822C5DF2482D2C /* Debug */ = {
+		15E37B3E6FC02AAFC484D38BEB1800C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DA574A3E16032A73E5B5578F6D62E87B /* WTCoreGraphicsExtensions.xcconfig */;
 			buildSettings = {
@@ -734,7 +542,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -747,12 +555,80 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/WTCoreGraphicsExtensions/WTCoreGraphicsExtensions.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = WTCoreGraphicsExtensions;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5AA98771BC2CDEBE8AAB1819CBB37DFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C8B95C6E6F3F5E65758D934969C0A71 /* WTUIColorExtensions.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/WTUIColorExtensions/WTUIColorExtensions-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WTUIColorExtensions/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WTUIColorExtensions/WTUIColorExtensions.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = WTUIColorExtensions;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6BE59290B96D6878BAFE923F15800D29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFA2902C24C240FCBD7278722DB88551 /* Pods-WTCoreGraphicsExtensions_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-WTCoreGraphicsExtensions_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WTCoreGraphicsExtensions_Tests/Pods-WTCoreGraphicsExtensions_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WTCoreGraphicsExtensions_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -843,9 +719,9 @@
 			};
 			name = Debug;
 		};
-		9E89D1B6FBE00649B6ECDEBDF13CFF06 /* Debug */ = {
+		B408FE282D71A2A520C1E94F6A7376C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFA2902C24C240FCBD7278722DB88551 /* Pods-WTCoreGraphicsExtensions_Tests.debug.xcconfig */;
+			baseConfigurationReference = 47522E4300618E98BD2A475966C9EDB7 /* WTBinaryFloatingPointExtensions.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -858,60 +734,25 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-WTCoreGraphicsExtensions_Tests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/WTBinaryFloatingPointExtensions/WTBinaryFloatingPointExtensions-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WTBinaryFloatingPointExtensions/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WTCoreGraphicsExtensions_Tests/Pods-WTCoreGraphicsExtensions_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/WTBinaryFloatingPointExtensions/WTBinaryFloatingPointExtensions.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_WTCoreGraphicsExtensions_Tests;
+				PRODUCT_NAME = WTBinaryFloatingPointExtensions;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		A187E78FDB8439A2C25985E76EBF9AA7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CB7E11528D622257E8643E4A2A74890 /* WTBoolExtensions.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/WTBoolExtensions/WTBoolExtensions-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WTBoolExtensions/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WTBoolExtensions/WTBoolExtensions.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = WTBoolExtensions;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A92E75CD9DE62E9A318C703E087D8C7B /* Release */ = {
+		C8CC9D69AD85F05005750A32328263F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 46592B418F247588E6BD3C57223B3825 /* Pods-WTCoreGraphicsExtensions_Tests.release.xcconfig */;
 			buildSettings = {
@@ -946,42 +787,9 @@
 			};
 			name = Release;
 		};
-		B2FB6880EA04CDC0B1136E4C341A1954 /* Debug */ = {
+		D19D4912ACBD627315BB5C25212A000A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8548589CD7F70131901CEDAC3099F3FE /* WTBinaryFloatingPointExtensions.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/WTBinaryFloatingPointExtensions/WTBinaryFloatingPointExtensions-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WTBinaryFloatingPointExtensions/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WTBinaryFloatingPointExtensions/WTBinaryFloatingPointExtensions.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = WTBinaryFloatingPointExtensions;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D11CF624F8707C6764E76CECB125BF16 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA574A3E16032A73E5B5578F6D62E87B /* WTCoreGraphicsExtensions.xcconfig */;
+			baseConfigurationReference = 47522E4300618E98BD2A475966C9EDB7 /* WTBinaryFloatingPointExtensions.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -994,14 +802,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/WTCoreGraphicsExtensions/WTCoreGraphicsExtensions-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WTCoreGraphicsExtensions/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/WTBinaryFloatingPointExtensions/WTBinaryFloatingPointExtensions-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WTBinaryFloatingPointExtensions/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WTCoreGraphicsExtensions/WTCoreGraphicsExtensions.modulemap";
+				MODULEMAP_FILE = "Target Support Files/WTBinaryFloatingPointExtensions/WTBinaryFloatingPointExtensions.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = WTCoreGraphicsExtensions;
+				PRODUCT_NAME = WTBinaryFloatingPointExtensions;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -1011,15 +819,15 @@
 			};
 			name = Release;
 		};
-		DCF694A303457EADE2ADC5F92759DB2A /* Debug */ = {
+		F8F705BD505E89FB685DB267C4AB1C20 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8881C83F8417A3259FCA48CC329ECD52 /* WTUIColorExtensions.xcconfig */;
+			baseConfigurationReference = 0C8B95C6E6F3F5E65758D934969C0A71 /* WTUIColorExtensions.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1032,8 +840,40 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/WTUIColorExtensions/WTUIColorExtensions.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = WTUIColorExtensions;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FF9F438ED69278D22DFF20BF7E1E2E5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA574A3E16032A73E5B5578F6D62E87B /* WTCoreGraphicsExtensions.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/WTCoreGraphicsExtensions/WTCoreGraphicsExtensions-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WTCoreGraphicsExtensions/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WTCoreGraphicsExtensions/WTCoreGraphicsExtensions.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = WTCoreGraphicsExtensions;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1047,15 +887,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		25A0224577EEC3A9621E4F6C27E3E109 /* Build configuration list for PBXNativeTarget "WTBoolExtensions" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6974D667C11A92E44EA170DA8721FF43 /* Debug */,
-				A187E78FDB8439A2C25985E76EBF9AA7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1065,38 +896,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B585D727CAF0CA9F9883B1FC7149E240 /* Build configuration list for PBXNativeTarget "WTCoreGraphicsExtensions" */ = {
+		30272EA32D2987FF63E95BA8179DD7B7 /* Build configuration list for PBXNativeTarget "WTBinaryFloatingPointExtensions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6FEF936A7A5A392139822C5DF2482D2C /* Debug */,
-				D11CF624F8707C6764E76CECB125BF16 /* Release */,
+				B408FE282D71A2A520C1E94F6A7376C6 /* Debug */,
+				D19D4912ACBD627315BB5C25212A000A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D568D05016582ECDD40BBC7DEB7147F9 /* Build configuration list for PBXNativeTarget "Pods-WTCoreGraphicsExtensions_Tests" */ = {
+		543A155CA2AFBCD048EC0EA1B62A2F50 /* Build configuration list for PBXNativeTarget "Pods-WTCoreGraphicsExtensions_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9E89D1B6FBE00649B6ECDEBDF13CFF06 /* Debug */,
-				A92E75CD9DE62E9A318C703E087D8C7B /* Release */,
+				6BE59290B96D6878BAFE923F15800D29 /* Debug */,
+				C8CC9D69AD85F05005750A32328263F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F25977E6BB8C0D770F1B707215FB24BE /* Build configuration list for PBXNativeTarget "WTBinaryFloatingPointExtensions" */ = {
+		A2B0C816EBFDA6BC99085FF5B710C205 /* Build configuration list for PBXNativeTarget "WTCoreGraphicsExtensions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B2FB6880EA04CDC0B1136E4C341A1954 /* Debug */,
-				0A742AED476AEC621B911A699A124A95 /* Release */,
+				FF9F438ED69278D22DFF20BF7E1E2E5E /* Debug */,
+				15E37B3E6FC02AAFC484D38BEB1800C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC47521CC6C1381E2E68012C63EC9F46 /* Build configuration list for PBXNativeTarget "WTUIColorExtensions" */ = {
+		D662ED9304C254B307429F47D9AA689B /* Build configuration list for PBXNativeTarget "WTUIColorExtensions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DCF694A303457EADE2ADC5F92759DB2A /* Debug */,
-				5AB6060EA8FDE10EF8BCDE39A49B168B /* Release */,
+				5AA98771BC2CDEBE8AAB1819CBB37DFA /* Debug */,
+				F8F705BD505E89FB685DB267C4AB1C20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

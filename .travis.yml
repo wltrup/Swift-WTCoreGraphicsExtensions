@@ -10,6 +10,5 @@ osx_image: xcode8
 # - gem install cocoapods # Since Travis is not always on latest version
 # - pod install --project-directory=Example
 script:
-- xcodebuild clean build -workspace Example/WTCoreGraphicsExtensions.xcworkspace -scheme WTCoreGraphicsExtensions-Example -destination 'platform=iOS Simulator,name=iPhone 6S' ONLY_ACTIVE_ARCH=NO | xcpretty
+- xcodebuild clean test -workspace Example/WTCoreGraphicsExtensions.xcworkspace -scheme WTCoreGraphicsExtensions-Example -destination 'platform=iOS Simulator,name=iPhone 6S' ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint
-

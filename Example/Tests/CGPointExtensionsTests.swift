@@ -49,7 +49,7 @@ class CGPointExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     /// approximating 1/12, when the range is [0, 1].
     func test_randomRandomness()
     {
-        N = 100_000
+        N = 10_000
         tolerance = 1e-2
 
         enum Coordinate {

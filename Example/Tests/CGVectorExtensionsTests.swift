@@ -161,7 +161,7 @@ class CGVectorExtensionsTests: WTCoreGraphicsExtensionsTestsBase
     /// approximating 1/12, when the range is [0, 1].
     func test_random()
     {
-        N = 100_000
+        N = 10_000
         tolerance = 1e-2
 
         enum Coordinate {

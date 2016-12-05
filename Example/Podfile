@@ -1,9 +1,8 @@
 use_frameworks!
 
+pod 'WTBinaryFloatingPointExtensions'
+pod 'WTUIColorExtensions'
+
 target 'WTCoreGraphicsExtensions_Tests' do
     pod 'WTCoreGraphicsExtensions', :path => '../'
 end
-
-pod 'WTBinaryFloatingPointExtensions', :git => 'https://github.com/wltrup/Swift-WTBinaryFloatingPointExtensions.git'
-pod 'WTUIColorExtensions', :git => 'https://github.com/wltrup/iOS-Swift-WTUIColorExtensions.git'
-

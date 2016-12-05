@@ -1,16 +1,15 @@
 # WTBinaryFloatingPointExtensions
 
-[![CI Status](http://img.shields.io/travis/wltrup/Swift-WTBinaryFloatingPointExtensions.svg?style=flat)](https://travis-ci.org/wltrup/Swift-WTBinaryFloatingPointExtensions)
+[![CI Status](http://img.shields.io/travis/Wagner Truppel/WTBinaryFloatingPointExtensions.svg?style=flat)](https://travis-ci.org/Wagner Truppel/WTBinaryFloatingPointExtensions)
 [![Version](https://img.shields.io/cocoapods/v/WTBinaryFloatingPointExtensions.svg?style=flat)](http://cocoapods.org/pods/WTBinaryFloatingPointExtensions)
 [![License](https://img.shields.io/cocoapods/l/WTBinaryFloatingPointExtensions.svg?style=flat)](http://cocoapods.org/pods/WTBinaryFloatingPointExtensions)
 [![Platform](https://img.shields.io/cocoapods/p/WTBinaryFloatingPointExtensions.svg?style=flat)](http://cocoapods.org/pods/WTBinaryFloatingPointExtensions)
 
 ## What
 
-**WTBinaryFloatingPointExtensions** adds to all floating point types conforming to the
-`BinaryFloatingPoint` protocol some commonly used trigonometry-related computed properties,
-conversions between degrees and radians, and functions to generate uniformly distributed
-(pseudo) random values. Here's the full set of API additions:
+**WTBinaryFloatingPointExtensions** adds to **all** floating point types some commonly used
+trigonometry-related computed properties, conversions between degrees and radians, and functions
+to generate uniformly distributed (pseudo) random values. Here's the full set of API additions:
 
 ```swift
 public static var piOver4: Self { get }

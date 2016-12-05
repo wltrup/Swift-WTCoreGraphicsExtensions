@@ -1,15 +1,16 @@
 # WTUIColorExtensions
 
-[![CI Status](http://img.shields.io/travis/wltrup/iOS-Swift-WTUIColorExtensions.svg?style=flat)](https://travis-ci.org/wltrup/iOS-Swift-WTUIColorExtensions)
+[![CI Status](http://img.shields.io/travis/Wagner Truppel/WTUIColorExtensions.svg?style=flat)](https://travis-ci.org/Wagner Truppel/WTUIColorExtensions)
 [![Version](https://img.shields.io/cocoapods/v/WTUIColorExtensions.svg?style=flat)](http://cocoapods.org/pods/WTUIColorExtensions)
 [![License](https://img.shields.io/cocoapods/l/WTUIColorExtensions.svg?style=flat)](http://cocoapods.org/pods/WTUIColorExtensions)
 [![Platform](https://img.shields.io/cocoapods/p/WTUIColorExtensions.svg?style=flat)](http://cocoapods.org/pods/WTUIColorExtensions)
 
 ## What
 
-**WTUIColorExtensions** adds to `UIColor` the ability to generate pseudo-random color instances
-and methods to extract color components in a more direct way than using `inout` arguments and
-the default `get...` methods. Here's the full set of API additions:
+**WTUIColorExtensions** adds to `UIColor` the ability to generate pseudo-random color instances,
+given their RGBA, HSBA, or white/alpha components, as well as methods to extract those color
+components in a more direct way than using `inout` arguments and the default `get...` methods.
+Here's the full set of API additions:
 
 ```swift
     public static var randomRGB: UIColor { get }

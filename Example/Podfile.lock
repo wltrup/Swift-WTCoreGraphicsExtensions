@@ -6,31 +6,19 @@ PODS:
   - WTUIColorExtensions (1.0.0)
 
 DEPENDENCIES:
-  - WTBinaryFloatingPointExtensions (from `https://github.com/wltrup/Swift-WTBinaryFloatingPointExtensions.git`)
+  - WTBinaryFloatingPointExtensions
   - WTCoreGraphicsExtensions (from `../`)
-  - WTUIColorExtensions (from `https://github.com/wltrup/iOS-Swift-WTUIColorExtensions.git`)
+  - WTUIColorExtensions
 
 EXTERNAL SOURCES:
-  WTBinaryFloatingPointExtensions:
-    :git: https://github.com/wltrup/Swift-WTBinaryFloatingPointExtensions.git
   WTCoreGraphicsExtensions:
     :path: "../"
-  WTUIColorExtensions:
-    :git: https://github.com/wltrup/iOS-Swift-WTUIColorExtensions.git
-
-CHECKOUT OPTIONS:
-  WTBinaryFloatingPointExtensions:
-    :commit: 3e3f2a6fda10d48d850a86c0ada0a8f71c9f60b3
-    :git: https://github.com/wltrup/Swift-WTBinaryFloatingPointExtensions.git
-  WTUIColorExtensions:
-    :commit: 82844ac3cdfcb9cb3e5fb318175f9b2cd485133a
-    :git: https://github.com/wltrup/iOS-Swift-WTUIColorExtensions.git
 
 SPEC CHECKSUMS:
-  WTBinaryFloatingPointExtensions: 4d04dd2e2a4ae275c87fbf490c84856d7551ece0
+  WTBinaryFloatingPointExtensions: 6022b5b20f0f432268b59c588838bf18976a763b
   WTCoreGraphicsExtensions: f2c6975b9514a18becc3a3382a3d95018463cf66
-  WTUIColorExtensions: b2f008cb64e853f2e56d75fa1e95ebb039fcf547
+  WTUIColorExtensions: b0177d75e9cf415eedc228864d896dc0bc90e606
 
-PODFILE CHECKSUM: 147a4a99885689488fcb820a05fb50e63e3c3d32
+PODFILE CHECKSUM: 2409ec36d35a18ef728cc3720e6fba97c2ece943
 
 COCOAPODS: 1.1.1

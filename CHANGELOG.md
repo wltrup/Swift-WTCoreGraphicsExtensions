@@ -1,5 +1,9 @@
 # WTCoreGraphicsExtensions
 
+## 1.0.4
+
+- Finally got Travis CI to validate the library.
+
 ## 1.0.3
 
 - Split the library into separate files.

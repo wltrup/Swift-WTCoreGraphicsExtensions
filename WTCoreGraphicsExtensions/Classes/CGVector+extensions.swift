@@ -1,5 +1,5 @@
 /*
- WTCoreGraphicsExtensions.swift
+ CGVector+extensions.swift
  WTCoreGraphicsExtensions
 
  Created by Wagner Truppel on 2016.12.03.
@@ -38,282 +38,10 @@
  https://github.com/wltrup
  */
 
-import Foundation
 import CoreGraphics
-import UIKit
-
 import WTBinaryFloatingPointExtensions
-import WTUIColorExtensions
 
-
-/// An enumeration describing the possible errors that can be thrown when
-/// using functions from the extended `CGPoint` and `CGVector` APIs provided
-/// by **WTCoreGraphicsExtensions**.
-///
-/// - **negativeTolerance**:
-///            Signifies that the function throwing the error expected
-///            a non-negative `tolerance` value but was provided with
-///            a negative one.
-///
-/// - **notNormalizable**:
-///            Signifies that the attempted function could not be performed
-///            because the `CGVector` instance on which it would operate is
-///            not normalizable (ie, is the zero vector).
-///
-/// - **negativeMagnitude**:
-///            Signifies that the attempted function expected a non-negative
-///            value for the `magnitude` argument but was passed a negative one.
-///
-/// - **divisionByZero**:
-///            Signifies that an attempt was performed to divide a value by zero.
-public enum WTCoreGraphicsExtensionsError: Error
-{
-    case negativeTolerance
-    case negativeMagnitude
-    case notNormalizable
-    case divisionByZero
-}
-
-// MARK: -
-
-// ================================================= //
-// ==================== CGFloat ==================== //
-// ================================================= //
-
-public extension CGFloat
-{
-    /// A small positive value used in floating-point comparisons.
-    public static let tolerance: CGFloat = 1e-12
-}
-
-// MARK: -
-
-// ================================================= //
-// ==================== CGPoint ==================== //
-// ================================================= //
-
-public extension CGPoint
-{
-    /// Initializes `self` with the given `Float` components.
-    ///
-    /// - Parameters:
-    ///   - x: any `Float` value.
-    ///   - y: any `Float` value.
-    public init(x: Float, y: Float)
-    {
-        self.x = CGFloat(x)
-        self.y = CGFloat(y)
-    }
-
-    /// Returns an instance where each component is a uniform pseudo-random 
-    /// number in the **closed** interval [min(a,b), max(a,b)].
-    ///
-    /// - Parameters:
-    ///   - a: any `CGFloat` value.
-    ///   - b: any `CGFloat` value.
-    ///
-    /// - Returns: an instance where each component is a uniform pseudo-random
-    ///            number in the **closed** interval [min(a,b), max(a,b)].
-    public static func random(_ a: CGFloat, _ b: CGFloat) -> CGPoint
-    {
-        let x = CGFloat.random(a, b)
-        let y = CGFloat.random(a, b)
-        return CGPoint(x: x, y: y)
-    }
-
-    /// Returns whether or not `self` equals another point, within a given
-    /// tolerance. More specifically, returns whether or not the magnitude
-    /// of the difference between the two points is within the given tolerance.
-    /// For exact comparisons, pass `0` for the `tolerance` value, or use the
-    /// `==` operator.
-    ///
-    /// - Parameters:
-    ///   - other: any `CGPoint` instance.
-    ///   - tolerance: a small non-negative value.
-    ///                The default value is `CGFloat.tolerance`.
-    ///
-    /// - Returns: whether or not `self` equals another point, within the
-    ///            given tolerance.
-    ///
-    /// - Throws: `WTCoreGraphicsExtensionsError.negativeTolerance`
-    ///           if `tolerance` is negative.
-    ///
-    /// - SeeAlso: `isNearlyZero(tolerance:)`.
-    public func isNearlyEqual(to other: CGPoint,
-                              tolerance: CGFloat = CGFloat.tolerance) throws -> Bool
-    {
-        if tolerance == 0 { return (self == other) }
-        guard tolerance > 0 else { throw WTCoreGraphicsExtensionsError.negativeTolerance }
-        return distanceSquared(to: other) <= tolerance*tolerance
-    }
-
-    /// Returns whether or not `self` equals the zero point, within a given
-    /// tolerance. More specifically, returns whether or not the magnitude
-    /// of `self` is within the given tolerance. For exact comparisons, pass
-    /// `0` for the `tolerance` value, or use the `==` operator.
-    ///
-    /// - Parameter tolerance: a small non-negative value.
-    ///                        The default value is `CGFloat.tolerance`.
-    ///
-    /// - Returns: whether or not `self` equals the zero point, within the
-    ///            given tolerance.
-    ///
-    /// - Throws: `WTCoreGraphicsExtensionsError.negativeTolerance`
-    ///           if `tolerance` is negative.
-    ///
-    /// - SeeAlso: `isNearlyEqual(to:tolerance:)`.
-    public func isNearlyZero(tolerance: CGFloat = CGFloat.tolerance) throws -> Bool
-    { return try isNearlyEqual(to: CGPoint.zero, tolerance: tolerance) }
-
-    /// Returns the
-    /// [**Euclidean distance**](https://en.wikipedia.org/wiki/Euclidean_distance)
-    /// between `self` and another point.
-    ///
-    /// - Parameter other: any `CGPoint` instance.
-    ///
-    /// - Returns: the Euclidean distance between `self` and another point.
-    ///
-    /// - SeeAlso: `distanceSquared(to:)`.
-    public func distance(to other: CGPoint) -> CGFloat
-    { return vector(to: other).magnitude }
-
-    /// Returns the **square** of the
-    /// [Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance)
-    /// between `self` and another point. This is more efficient than calling
-    /// `distance(to:)` and then squaring.
-    ///
-    /// - Parameter other: any `CGPoint` instance.
-    ///
-    /// - Returns: the square of the Euclidean distance between `self`
-    ///            and another point.
-    ///
-    /// - SeeAlso: `distance(to:)`.
-    public func distanceSquared(to other: CGPoint) -> CGFloat
-    { return vector(to: other).magnitudeSquared }
-
-    /// Returns the
-    /// [**Manhattan distance**](https://en.wikipedia.org/wiki/Taxicab_geometry)
-    /// between `self` and another point. The Manhattan distance is also known as
-    /// the **Taxicab distance**.
-    ///
-    /// - Parameter other: any `CGPoint` instance.
-    ///
-    /// - Returns: the Manhattan distance between `self` and another point.
-    ///
-    /// - SeeAlso: `distance(to:)`.
-    /// - SeeAlso: `distanceSquared(to:)`.
-    public func manhattanDistance(to other: CGPoint) -> CGFloat
-    { return vector(to: other).manhattanMagnitude }
-
-    /// Returns the vector pointing from `self` to another point.
-    ///
-    /// - Parameter other: any `CGPoint` instance.
-    ///
-    /// - Returns: the vector pointing **from** `self` **to** another point.
-    ///
-    /// - SeeAlso: `vector(from:)`.
-    /// - SeeAlso: `CGPoint.vector(from:to:)`.
-    public func vector(to other: CGPoint) -> CGVector
-    {
-        let dx = other.x - self.x
-        let dy = other.y - self.y
-        return CGVector(dx: dx, dy: dy)
-    }
-
-    /// Returns the vector pointing to `self` from another point.
-    ///
-    /// - Parameter other: any `CGPoint` instance.
-    ///
-    /// - Returns: the vector pointing **to** `self` **from** another point.
-    ///
-    /// - SeeAlso: `vector(to:)`.
-    /// - SeeAlso: `CGPoint.vector(from:to:)`.
-    public func vector(from other: CGPoint) -> CGVector
-    { return other.vector(to: self) }
-
-    /// Returns the vector from one point to another.
-    ///
-    /// - Parameters:
-    ///   - point1: any `CGPoint` instance.
-    ///   - point2: any `CGPoint` instance.
-    ///
-    /// - Returns: the vector from one point to another.
-    ///
-    /// - SeeAlso: `vector(to:)`.
-    /// - SeeAlso: `vector(from:)`.
-    public static func vector(from point1: CGPoint, to point2: CGPoint) -> CGVector
-    { return point1.vector(to: point2) }
-
-    // MARK: -
-
-    /// Adds a vector to a point, resulting in a point.
-    ///
-    /// - Parameters:
-    ///   - lhs: the point.
-    ///   - rhs: the vector.
-    ///
-    /// - Returns: the point resulting from adding the vector to the point.
-    public static func +(lhs: CGPoint, rhs: CGVector) -> CGPoint
-    {
-        let x = lhs.x + rhs.dx
-        let y = lhs.y + rhs.dy
-        return CGPoint(x: x, y: y)
-    }
-
-    /// Subtracts a vector from a point, resulting in a point.
-    ///
-    /// - Parameters:
-    ///   - lhs: the point.
-    ///   - rhs: the vector.
-    ///
-    /// - Returns: the point resulting from subtracting the vector from the point.
-    public static func -(lhs: CGPoint, rhs: CGVector) -> CGPoint
-    {
-        let x = lhs.x - rhs.dx
-        let y = lhs.y - rhs.dy
-        return CGPoint(x: x, y: y)
-    }
-
-    /// Subtracts two points, resulting in a vector pointing from `rhs` to `lhs`.
-    ///
-    /// - Parameters:
-    ///   - lhs: any `CGPoint` instance.
-    ///   - rhs: any `CGPoint` instance.
-    ///
-    /// - Returns: the vector resulting from subtracting a point from another point.
-    public static func -(lhs: CGPoint, rhs: CGPoint) -> CGVector
-    { return rhs.vector(to: lhs) }
-
-    /// Adds a vector to the point `self`.
-    ///
-    /// - Parameters:
-    ///   - lhs: the point.
-    ///   - rhs: the vector.
-    public static func +=(lhs: inout CGPoint, rhs: CGVector)
-    { lhs = lhs + rhs }
-
-    /// Subtracts a vector from the point `self`.
-    ///
-    /// - Parameters:
-    ///   - lhs: the point.
-    ///   - rhs: the vector.
-    public static func -=(lhs: inout CGPoint, rhs: CGVector)
-    { lhs = lhs - rhs }
-}
-
-// MARK: -
-
-extension CGPoint: Hashable
-{
-    /// Probably not a great hashing method but simple and useful enough.
-    public var hashValue: Int { return "\(x)\(y)".hashValue }
-}
-
-// MARK: -
-
-// ================================================== //
-// ==================== CGVector ==================== //
-// ================================================== //
+// MARK: - Instance creation and initializers
 
 public extension CGVector
 {
@@ -378,8 +106,6 @@ public extension CGVector
         dy = m * sina
     }
 
-    // MARK: -
-
     /// Returns an instance where each component is a uniform pseudo-random number
     /// in the **closed** interval [min(a,b), max(a,b)].
     ///
@@ -405,9 +131,12 @@ public extension CGVector
     /// SeeAlso: `CGVector.unitVectorX`.
     public static var unitVectorY: CGVector
     { return CGVector(dx: 0, dy: 1) }
+}
 
-    // MARK: -
+// MARK: - Equality
 
+public extension CGVector
+{
     /// Returns whether or not `self` equals another vector, within a given
     /// tolerance. More specifically, returns whether or not the magnitude
     /// of the difference between the two vectors is within the given tolerance.
@@ -451,9 +180,12 @@ public extension CGVector
     /// - SeeAlso: `isNearlyEqual(to:tolerance:)`.
     public func isNearlyZero(tolerance: CGFloat = CGFloat.tolerance) throws -> Bool
     { return try isNearlyEqual(to: CGVector.zero, tolerance: tolerance) }
+}
 
-    // MARK: -
+// MARK: - Metric properties
 
+public extension CGVector
+{
     /// Returns the
     /// [(Eucliden) **magnitude**](https://en.wikipedia.org/wiki/Euclidean_distance)
     /// of `self`.
@@ -476,9 +208,12 @@ public extension CGVector
     /// - SeeAlso: `magnitude`.
     public var manhattanMagnitude: CGFloat
     { return abs(dx) + abs(dy) }
+}
 
-    // MARK: -
+// MARK: - Normalization and scaling
 
+public extension CGVector
+{
     /// Returns whether or not the vector can be normalized.
     ///
     /// - SeeAlso: `normalize()`.
@@ -670,9 +405,12 @@ public extension CGVector
         try newVector.scaleMagnitudeUpToIfSmaller(than: minValue)
         return newVector
     }
+}
 
-    // MARK: -
+// MARK: - Dot and cross products
 
+public extension CGVector
+{
     /// Returns the **dot product** of `self` with another vector.
     ///
     /// - Parameter other: any `CGVector` instance.
@@ -692,9 +430,12 @@ public extension CGVector
     /// - SeeAlso: `dot(with:)`.
     public func cross(with other: CGVector) -> CGFloat
     { return (dx * other.dy - dy * other.dx) }
+}
 
-    // MARK: -
+// MARK: - Angles
 
+public extension CGVector
+{
     /// Returns the oriented angle (in radians) measured from the
     /// positive X axis to `self` (ie, the vector's **argument**),
     /// in the **semi-closed** interval [0, 2π). For consistency
@@ -776,9 +517,12 @@ public extension CGVector
         if delta > CGFloat(180).degreesInRadians { return CGFloat.twoPi - delta }
         return delta
     }
+}
 
-    // MARK: -
+// MARK: - Projections
 
+public extension CGVector
+{
     /// Returns a vector whose magnitude is the projection of `self` onto
     /// the given vector and whose direction is the direction of the given
     /// vector. In other words, this method extracts from self a vector that's
@@ -880,9 +624,12 @@ public extension CGVector
         guard tolerance >= 0 else { throw WTCoreGraphicsExtensionsError.negativeTolerance }
         return (abs(self.dot(with: other)) <= tolerance)
     }
+}
 
-    // MARK: -
+// MARK: - Rotations
 
+public extension CGVector
+{
     /// Rotates `self` **clockwise** around the z axis by the given
     /// angle (in radians).
     ///
@@ -1069,9 +816,12 @@ public extension CGVector
         newVector.rotateCounterClockwise(sine: sina, cosine: cosa)
         return newVector
     }
+}
 
-    // MARK: -
+// MARK: - Operators
 
+public extension CGVector
+{
     /// Adds two vectors, resulting in a vector.
     ///
     /// - Parameters:
@@ -1192,113 +942,10 @@ public extension CGVector
     }
 }
 
-// MARK: -
+// MARK: - Hashing
 
 extension CGVector: Hashable
 {
     /// Probably not a great hashing method but simple and useful enough.
     public var hashValue: Int { return "\(dx)\(dy)".hashValue }
-}
-
-// MARK: -
-
-// ==================================================== //
-// ==================== CGGradient ==================== //
-// ==================================================== //
-
-public extension CGGradient
-{
-    /// An enumeration describing the possible errors that can be thrown when using
-    /// functions from the extended `CGGradient` API provided 
-    /// by **WTCoreGraphicsExtensions**.
-    ///
-    /// - **mismatchedColorAndLocationArraySizes**:
-    ///            Signifies that the function throwing the error
-    ///            expected an array of colors and an array of their
-    ///            locations, having the same length, but was passed
-    ///            arrays of different lengths.
-    ///
-    /// - **invalidNumberOfColorLocationPairs**:
-    ///            Signifies that the function throwing the error
-    ///            expected a minimum number of color locations but
-    ///            was passed a number below that.
-    ///
-    /// - **invalidColorLocations**:
-    ///            Signifies that the function throwing the error
-    ///            expected an array of color locations with at least
-    ///            two distinct locations.
-    public enum CGGradientError: Error
-    {
-        case mismatchedColorAndLocationArraySizes
-        case invalidNumberOfColorLocationPairs
-        case invalidColorLocations
-    }
-    
-    /// Returns an instance (or `nil`) which represents a gradient
-    /// of colors in the RGB color space, with specific color values located
-    /// at particular positions along the final gradient.
-    ///
-    /// The locations array need **not** be sorted in ascending order **nor**
-    /// need it be normalized to the closed interval [0, 1].
-    ///
-    /// - Parameters:
-    ///   - colors: an array of the colors defining the gradient.
-    ///   - locations: an array of locations for those colors.
-    ///   - colorSpace: the color space to use for the gradient.
-    ///
-    /// - Returns: an instance (or `nil`) which represents
-    ///            a gradient of colors from the given color space, with
-    ///            specific color values located at particular positions
-    ///            along the final gradient.
-    ///
-    /// - Throws: `CGGradient.CGGradientError.mismatchedColorAndLocationArraySizes`
-    ///           if the `colors` and the `locations` arrays have different lengths.
-    ///
-    /// - Throws: `CGGradient.CGGradientError.invalidNumberOfColorLocationPairs`
-    ///           if the `locations` array has a length below 2.
-    ///
-    /// - Throws: `CGGradient.CGGradientError.invalidColorLocations`
-    ///           if the `locations` array does not have at least two distinct elements.
-    ///
-    /// - Throws: `UIColor.ColorError.invalidColorSpace`
-    ///           if any of the provided colors is not in the RGB color space.
-    public static func rgbaGradient(with colors: [UIColor], at locations: [CGFloat])
-        throws -> CGGradient?
-    {
-        let numLocations: size_t = locations.count
-        guard numLocations > 1 else {
-            throw CGGradient.CGGradientError.invalidNumberOfColorLocationPairs
-        }
-        guard colors.count == locations.count else {
-            throw CGGradient.CGGradientError.mismatchedColorAndLocationArraySizes
-        }
-
-        let sortedLocations = locations.sorted(by: <)
-        let minLocation = sortedLocations.first!
-        let maxLocation = sortedLocations.last!
-
-        let locationRange = maxLocation - minLocation
-        guard locationRange != 0 else {
-            throw CGGradient.CGGradientError.invalidColorLocations
-        }
-
-        let normalizedLocations = locations.map { ($0 - minLocation) / locationRange }
-
-        let pairs: [(location: CGFloat, color: UIColor)] = (0 ..< locations.count)
-            .map { index in (normalizedLocations[index], colors[index]) }
-            .sorted { (pair1, pair2) in pair1.location <= pair2.location }
-
-        let sortedNormalizedLocations = pairs.map { pair in pair.location }
-        let colorSpace = CGColorSpaceCreateDeviceRGB()
-
-        let colorComponents: [CGFloat] = try pairs
-            .map { (_, color) in try color.rgbaComponents() }
-            .map { comps in [comps.red, comps.green, comps.blue, comps.alpha] }
-            .flatMap { $0 }
-
-        return CGGradient(colorSpace: colorSpace,
-                          colorComponents: colorComponents,
-                          locations: sortedNormalizedLocations,
-                          count: numLocations)
-    }
 }

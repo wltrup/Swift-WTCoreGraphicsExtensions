@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		0CD9B5C8EEDDF704CCF5E64245890EAC /* WTBinaryFloatingPointExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E5C51827D07A95B729F6AB172314DD /* WTBinaryFloatingPointExtensions-dummy.m */; };
 		0E70E3630C9EE1A2920AC85E379134AD /* WTUIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D4862515B97CD3E40A5428605DEAC /* WTUIColorExtensions.swift */; };
+		3B517A4D1DF6DBAE00D7BA1D /* CGFloat+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B517A491DF6DBAE00D7BA1D /* CGFloat+extensions.swift */; };
+		3B517A4E1DF6DBAE00D7BA1D /* CGGradient+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B517A4A1DF6DBAE00D7BA1D /* CGGradient+extensions.swift */; };
+		3B517A4F1DF6DBAE00D7BA1D /* CGPoint+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B517A4B1DF6DBAE00D7BA1D /* CGPoint+extensions.swift */; };
+		3B517A501DF6DBAE00D7BA1D /* CGVector+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B517A4C1DF6DBAE00D7BA1D /* CGVector+extensions.swift */; };
 		46C658DAD8AC73217E9870BCBD4847B1 /* WTBinaryFloatingPointExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B3B19FEC83D134081B25743D045852 /* WTBinaryFloatingPointExtensions.framework */; };
 		4D7E39A6B6EFFC72118F9CCFC3BD7E59 /* WTUIColorExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47035828697900264D96BF7FD2386871 /* WTUIColorExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		537B5CC3C85ADA87383B415078866FC7 /* Pods-WTCoreGraphicsExtensions_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFDB67DB1D5EC9EFA7E8377FC6331961 /* Pods-WTCoreGraphicsExtensions_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C15C18CD03B52E7FA57594DC2E8580 /* Pods-WTCoreGraphicsExtensions_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 705B8ADDC24B5AF0FFF979BDCA476FE8 /* Pods-WTCoreGraphicsExtensions_Tests-dummy.m */; };
 		666429A2D58915A8F656022D6A1B209F /* WTUIColorExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CF100500B57BC8FAE4631D375CC93C /* WTUIColorExtensions-dummy.m */; };
-		68BD1C7805660B2FF3DCDB0C7C3F6E16 /* WTCoreGraphicsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E51F20E4062EDF7F7325693925ACC /* WTCoreGraphicsExtensions.swift */; };
+		68BD1C7805660B2FF3DCDB0C7C3F6E16 /* WTCoreGraphicsExtensionsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E51F20E4062EDF7F7325693925ACC /* WTCoreGraphicsExtensionsError.swift */; };
 		78E421543CA649DCD913A40E8A12BE26 /* WTBinaryFloatingPointExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D7E299BF8730173B2192EF482198D172 /* WTBinaryFloatingPointExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79DDBAA4367E417CBCD6651CF6C672B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC7156EA514C43DFBB0718B50BB262F /* UIKit.framework */; };
 		966F0CE2994C2658B632785C5CA5CCF3 /* WTUIColorExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9222DBAAE1C848E65616863D10DD4D5A /* WTUIColorExtensions.framework */; };
@@ -66,30 +70,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		039B9B8B652BFB4360F84A0ECA8B4BCE /* WTUIColorExtensions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = WTUIColorExtensions.modulemap; sourceTree = "<group>"; };
-		068528FE0BFC97384F2496B8235FC9C0 /* WTCoreGraphicsExtensions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = WTCoreGraphicsExtensions.modulemap; sourceTree = "<group>"; };
+		039B9B8B652BFB4360F84A0ECA8B4BCE /* WTUIColorExtensions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = WTUIColorExtensions.modulemap; sourceTree = "<group>"; };
+		068528FE0BFC97384F2496B8235FC9C0 /* WTCoreGraphicsExtensions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = WTCoreGraphicsExtensions.modulemap; sourceTree = "<group>"; };
 		0C8B95C6E6F3F5E65758D934969C0A71 /* WTUIColorExtensions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WTUIColorExtensions.xcconfig; sourceTree = "<group>"; };
 		1A97EA21493B167B18D0BA7375EEE5CC /* WTBinaryFloatingPointExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WTBinaryFloatingPointExtensions.swift; path = WTBinaryFloatingPointExtensions/Classes/WTBinaryFloatingPointExtensions.swift; sourceTree = "<group>"; };
 		2396EC8D21B1E2F9B4D5ECAFC9B50A18 /* Pods-WTCoreGraphicsExtensions_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WTCoreGraphicsExtensions_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		2AA53F20E0511D823E0009C319A3CC75 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		357C443E228A2CFBB588E65A8C938076 /* WTCoreGraphicsExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTCoreGraphicsExtensions-umbrella.h"; sourceTree = "<group>"; };
-		440E51F20E4062EDF7F7325693925ACC /* WTCoreGraphicsExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WTCoreGraphicsExtensions.swift; sourceTree = "<group>"; };
+		3B517A491DF6DBAE00D7BA1D /* CGFloat+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+extensions.swift"; sourceTree = "<group>"; };
+		3B517A4A1DF6DBAE00D7BA1D /* CGGradient+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGGradient+extensions.swift"; sourceTree = "<group>"; };
+		3B517A4B1DF6DBAE00D7BA1D /* CGPoint+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+extensions.swift"; sourceTree = "<group>"; };
+		3B517A4C1DF6DBAE00D7BA1D /* CGVector+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGVector+extensions.swift"; sourceTree = "<group>"; };
+		440E51F20E4062EDF7F7325693925ACC /* WTCoreGraphicsExtensionsError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WTCoreGraphicsExtensionsError.swift; sourceTree = "<group>"; };
 		46592B418F247588E6BD3C57223B3825 /* Pods-WTCoreGraphicsExtensions_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WTCoreGraphicsExtensions_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		47035828697900264D96BF7FD2386871 /* WTUIColorExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTUIColorExtensions-umbrella.h"; sourceTree = "<group>"; };
 		47522E4300618E98BD2A475966C9EDB7 /* WTBinaryFloatingPointExtensions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WTBinaryFloatingPointExtensions.xcconfig; sourceTree = "<group>"; };
-		4B7220E11C885D3DF9CE8506B9065304 /* WTCoreGraphicsExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WTCoreGraphicsExtensions.framework; path = WTCoreGraphicsExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B7220E11C885D3DF9CE8506B9065304 /* WTCoreGraphicsExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WTCoreGraphicsExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52B3B19FEC83D134081B25743D045852 /* WTBinaryFloatingPointExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WTBinaryFloatingPointExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6092824388A019814133348FA71781BD /* WTCoreGraphicsExtensions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTCoreGraphicsExtensions-prefix.pch"; sourceTree = "<group>"; };
 		61E5C51827D07A95B729F6AB172314DD /* WTBinaryFloatingPointExtensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WTBinaryFloatingPointExtensions-dummy.m"; sourceTree = "<group>"; };
 		622476D29119786CBD9B13062C6F0E66 /* Pods-WTCoreGraphicsExtensions_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WTCoreGraphicsExtensions_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		64CF100500B57BC8FAE4631D375CC93C /* WTUIColorExtensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WTUIColorExtensions-dummy.m"; sourceTree = "<group>"; };
-		653F45CE5FD1F741A2970E411DBC4614 /* WTBinaryFloatingPointExtensions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = WTBinaryFloatingPointExtensions.modulemap; sourceTree = "<group>"; };
+		653F45CE5FD1F741A2970E411DBC4614 /* WTBinaryFloatingPointExtensions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = WTBinaryFloatingPointExtensions.modulemap; sourceTree = "<group>"; };
 		6CBD158FBD0B70B644E7EECA4A1BCA36 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		705B8ADDC24B5AF0FFF979BDCA476FE8 /* Pods-WTCoreGraphicsExtensions_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WTCoreGraphicsExtensions_Tests-dummy.m"; sourceTree = "<group>"; };
 		8568111908D40133093194119427A447 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9222DBAAE1C848E65616863D10DD4D5A /* WTUIColorExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WTUIColorExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93DADE1FB93A42E0F00761624722D34D /* WTUIColorExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WTUIColorExtensions.framework; path = WTUIColorExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93DADE1FB93A42E0F00761624722D34D /* WTUIColorExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WTUIColorExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F7376C1120781679169302E879276B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA5D4862515B97CD3E40A5428605DEAC /* WTUIColorExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WTUIColorExtensions.swift; path = WTUIColorExtensions/Classes/WTUIColorExtensions.swift; sourceTree = "<group>"; };
 		AFA2902C24C240FCBD7278722DB88551 /* Pods-WTCoreGraphicsExtensions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WTCoreGraphicsExtensions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -100,11 +108,11 @@
 		CFDB67DB1D5EC9EFA7E8377FC6331961 /* Pods-WTCoreGraphicsExtensions_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WTCoreGraphicsExtensions_Tests-umbrella.h"; sourceTree = "<group>"; };
 		D007EAD9706840CE2DBDCFC79C0F1F66 /* Pods-WTCoreGraphicsExtensions_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WTCoreGraphicsExtensions_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D320B39FC4CD1D5783A40C321DB54F41 /* Pods-WTCoreGraphicsExtensions_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WTCoreGraphicsExtensions_Tests-resources.sh"; sourceTree = "<group>"; };
-		D6BA3023DD5B873754A601E8ED95B5C5 /* Pods_WTCoreGraphicsExtensions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WTCoreGraphicsExtensions_Tests.framework; path = "Pods-WTCoreGraphicsExtensions_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6BA3023DD5B873754A601E8ED95B5C5 /* Pods_WTCoreGraphicsExtensions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTCoreGraphicsExtensions_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E299BF8730173B2192EF482198D172 /* WTBinaryFloatingPointExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTBinaryFloatingPointExtensions-umbrella.h"; sourceTree = "<group>"; };
 		DA574A3E16032A73E5B5578F6D62E87B /* WTCoreGraphicsExtensions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WTCoreGraphicsExtensions.xcconfig; sourceTree = "<group>"; };
-		DF478768D4178F4649603D00B66BA978 /* Pods-WTCoreGraphicsExtensions_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WTCoreGraphicsExtensions_Tests.modulemap"; sourceTree = "<group>"; };
-		E44E4DB93EECE16C9CB16F0C0690FCE3 /* WTBinaryFloatingPointExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WTBinaryFloatingPointExtensions.framework; path = WTBinaryFloatingPointExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF478768D4178F4649603D00B66BA978 /* Pods-WTCoreGraphicsExtensions_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WTCoreGraphicsExtensions_Tests.modulemap"; sourceTree = "<group>"; };
+		E44E4DB93EECE16C9CB16F0C0690FCE3 /* WTBinaryFloatingPointExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WTBinaryFloatingPointExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66B3A74718E661BA6307183FF87DC7F /* WTCoreGraphicsExtensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WTCoreGraphicsExtensions-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,16 +161,18 @@
 				1A97EA21493B167B18D0BA7375EEE5CC /* WTBinaryFloatingPointExtensions.swift */,
 				45C86E659C2F3C00DF2F65B81F6FC7F1 /* Support Files */,
 			);
-			name = WTBinaryFloatingPointExtensions;
 			path = WTBinaryFloatingPointExtensions;
 			sourceTree = "<group>";
 		};
 		205ED205866060A37AC4676FD9591270 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				440E51F20E4062EDF7F7325693925ACC /* WTCoreGraphicsExtensions.swift */,
+				440E51F20E4062EDF7F7325693925ACC /* WTCoreGraphicsExtensionsError.swift */,
+				3B517A491DF6DBAE00D7BA1D /* CGFloat+extensions.swift */,
+				3B517A4B1DF6DBAE00D7BA1D /* CGPoint+extensions.swift */,
+				3B517A4C1DF6DBAE00D7BA1D /* CGVector+extensions.swift */,
+				3B517A4A1DF6DBAE00D7BA1D /* CGGradient+extensions.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -237,7 +247,6 @@
 			children = (
 				205ED205866060A37AC4676FD9591270 /* Classes */,
 			);
-			name = WTCoreGraphicsExtensions;
 			path = WTCoreGraphicsExtensions;
 			sourceTree = "<group>";
 		};
@@ -258,7 +267,6 @@
 				AA5D4862515B97CD3E40A5428605DEAC /* WTUIColorExtensions.swift */,
 				E8C9DCAABCE92B95F77723F9C9D46A62 /* Support Files */,
 			);
-			name = WTUIColorExtensions;
 			path = WTUIColorExtensions;
 			sourceTree = "<group>";
 		};
@@ -477,7 +485,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E058A56C091751FCC532447700FFFB49 /* WTCoreGraphicsExtensions-dummy.m in Sources */,
-				68BD1C7805660B2FF3DCDB0C7C3F6E16 /* WTCoreGraphicsExtensions.swift in Sources */,
+				3B517A4E1DF6DBAE00D7BA1D /* CGGradient+extensions.swift in Sources */,
+				3B517A4F1DF6DBAE00D7BA1D /* CGPoint+extensions.swift in Sources */,
+				68BD1C7805660B2FF3DCDB0C7C3F6E16 /* WTCoreGraphicsExtensionsError.swift in Sources */,
+				3B517A501DF6DBAE00D7BA1D /* CGVector+extensions.swift in Sources */,
+				3B517A4D1DF6DBAE00D7BA1D /* CGFloat+extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = 'WTCoreGraphicsExtensions'
-  s.version     = '1.0.2'
+  s.version     = '1.0.3'
   s.summary     = 'Useful extensions to CGPoint, CGVector, and CGGradient.'
   s.description = <<-DESC
     A collection of useful extensions to CGPoint, CGVector, and CGGradient.

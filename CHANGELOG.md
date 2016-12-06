@@ -1,5 +1,9 @@
 # WTCoreGraphicsExtensions
 
+## 1.0.3
+
+- Split the library into separate files.
+
 ## 1.0.2
 
 - Updated to make use of version 1.0.2 of its dependencies:

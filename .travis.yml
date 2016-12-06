@@ -11,4 +11,5 @@ osx_image: xcode8
 # - pod install --project-directory=Example
 script:
 - xcodebuild clean test -workspace Example/WTCoreGraphicsExtensions.xcworkspace -scheme WTCoreGraphicsExtensions-Example -destination 'platform=iOS Simulator,name=iPhone 6S' ONLY_ACTIVE_ARCH=NO | xcpretty
+- pod repo update
 - pod lib lint

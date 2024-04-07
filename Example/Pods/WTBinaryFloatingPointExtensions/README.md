@@ -55,10 +55,6 @@ it, simply add the following line to your Podfile:
 pod "WTBinaryFloatingPointExtensions"
 ```
 
-## Author
-
-Wagner Truppel, trupwl@gmail.com
-
 ## License
 
 **WTBinaryFloatingPointExtensions** is available under the MIT license. See the LICENSE file for more info.

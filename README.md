@@ -214,10 +214,6 @@ it, simply add the following line to your Podfile:
 pod "WTCoreGraphicsExtensions"
 ```
 
-## Author
-
-Wagner Truppel, trupwl@gmail.com
-
 ## License
 
 **WTCoreGraphicsExtensions** is available under the MIT license. See the LICENSE file for more info.
